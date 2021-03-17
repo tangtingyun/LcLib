@@ -34,7 +34,7 @@ public class LcLoadingView extends View {
 
     public LcLoadingView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        mSize = DisplayHelper.dp2px(context, 40);
+        mSize = DisplayHelper.dp2px( 40);
         mPaintColor = Color.WHITE;
         initPaint();
     }

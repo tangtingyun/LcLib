@@ -1,15 +1,10 @@
 package com.step.lclib.widget.dialog;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.text.TextUtils;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import androidx.annotation.IntDef;
@@ -19,9 +14,10 @@ import androidx.appcompat.widget.AppCompatTextView;
 import com.step.lclib.R;
 import com.step.lclib.util.DisplayHelper;
 import com.step.lclib.util.LayoutHelper;
-import com.step.lclib.util.ResHelper;
 import com.step.lclib.view.CornerLinearLayout;
 import com.step.lclib.widget.progress.LcLoadingView;
+
+import org.devio.hi.library.util.HiRes;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -34,7 +30,6 @@ public class LcTipDialog extends LcDialogBase {
 
     public LcTipDialog(Context context, int themeResId) {
         super(context, themeResId);
-        setCanceledOnTouchOutside(false);
     }
 
 
@@ -102,29 +97,17 @@ public class LcTipDialog extends LcDialogBase {
             lcTipDialog.setCanceledOnTouchOutside(cancelable);
 
 
-            Window window = lcTipDialog.getWindow();
-            WindowManager.LayoutParams attributes = window.getAttributes();
-            attributes.width = WindowManager.LayoutParams.WRAP_CONTENT;
-            attributes.height = WindowManager.LayoutParams.WRAP_CONTENT;
-            attributes.gravity = Gravity.CENTER;
-            attributes.dimAmount = 0.5f;
-            //这个背景必须设置哦，否则 会出现对话框 宽度很宽
-            window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-
             Context dialogContext = lcTipDialog.getContext();
             CornerLinearLayout cornerLinearLayout = new CornerLinearLayout(dialogContext);
-            cornerLinearLayout.setViewOutline(DisplayHelper.dp2px(dialogContext, 10),
-                    LayoutHelper.RADIUS_ALL);
-            cornerLinearLayout.setBackgroundColor(
-                    ResHelper.getAttrColor(dialogContext, R.color.color_75_pure_black));
+            cornerLinearLayout.setViewOutline(DisplayHelper.dp2px(10), LayoutHelper.RADIUS_ALL);
+            cornerLinearLayout.setBackgroundColor(HiRes.INSTANCE.getColor(R.color.color_75_pure_black));
             cornerLinearLayout.setOrientation(LinearLayout.VERTICAL);
-            cornerLinearLayout.setGravity(Gravity.CENTER_HORIZONTAL);
+            cornerLinearLayout.setGravity(Gravity.CENTER);
 
-            int deviceWidth = DisplayHelper.getScreenWidth(dialogContext);
-            int deviceHeight = DisplayHelper.getScreenHeight(dialogContext);
+            int deviceWidth = DisplayHelper.getScreenWidth();
 
             int width = deviceWidth / 3;
-            int height = (int) (width * 1.5);
+            int height = (int) (width * 0.8);
 
             cornerLinearLayout.setLayoutParams(new ViewGroup.LayoutParams(width, height));
 
@@ -152,12 +135,13 @@ public class LcTipDialog extends LcDialogBase {
                 AppCompatTextView tipView = new AppCompatTextView(dialogContext);
                 tipView.setEllipsize(TextUtils.TruncateAt.END);
                 tipView.setGravity(Gravity.CENTER);
-                tipView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
-
-                tipView.setTextColor(ResHelper.getAttrColor(dialogContext, R.color.color_black));
+                tipView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+                tipView.setTextColor(HiRes.INSTANCE.getColor(R.color.color_white));
                 tipView.setText(mTipWord);
-                cornerLinearLayout.addView(tipView, new LinearLayout.LayoutParams(
-                        ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
+                        ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                params.topMargin = DisplayHelper.dp2px(10);
+                cornerLinearLayout.addView(tipView, params);
             }
             lcTipDialog.setContentView(cornerLinearLayout);
             return lcTipDialog;

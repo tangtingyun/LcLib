@@ -2,30 +2,73 @@ package com.step.lclib.util;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Point;
 import android.util.DisplayMetrics;
+import android.util.TypedValue;
+import android.view.Display;
+import android.view.WindowManager;
+
+import androidx.annotation.NonNull;
+
+import org.devio.hi.library.util.AppGlobals;
 
 public class DisplayHelper {
 
-    // 单位转换 dp -> px
-    public static int dp2px(Context context, int dp) {
-        return (int) (getDensity(context) * dp + 0.5);
+    public static int dp2px(float dp) {
+        Resources resources = AppGlobals.INSTANCE.get().getResources();
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, resources.getDisplayMetrics());
     }
 
-    // 单位转换  sp -> px
-    public static int sp2px(Context context, int sp) {
-        return (int) (getFontDensity(context) * sp + 0.5);
+    public static int sp2px(float dp) {
+        Resources resources = AppGlobals.INSTANCE.get().getResources();
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, dp, resources.getDisplayMetrics());
     }
 
-    public static int getScreenWidth(Context context) {
-        final Resources resources = context.getResources();
-        final DisplayMetrics dm = resources.getDisplayMetrics();
+    public static int dp2px(float dp, Resources resources) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, resources.getDisplayMetrics());
+    }
+
+    public static int getScreenWidth() {
+        final DisplayMetrics dm = Resources.getSystem().getDisplayMetrics();
         return dm.widthPixels;
     }
 
-    public static int getScreenHeight(Context context) {
-        final Resources resources = context.getResources();
-        final DisplayMetrics dm = resources.getDisplayMetrics();
+    public static int getScreenHeight() {
+        final DisplayMetrics dm = Resources.getSystem().getDisplayMetrics();
         return dm.heightPixels;
+    }
+
+    public static int getDisplayWidthInPx(@NonNull Context context) {
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        if (wm != null) {
+            Display display = wm.getDefaultDisplay();
+            Point size = new Point();
+            display.getSize(size);
+            return size.x;
+        }
+        return 0;
+
+    }
+
+    public static int getDisplayHeightInPx(@NonNull Context context) {
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        if (wm != null) {
+            Display display = wm.getDefaultDisplay();
+            Point size = new Point();
+            display.getSize(size);
+            return size.y;
+        }
+        return 0;
+    }
+
+    public static int getStatusBarDimensionPx() {
+        int statusBarHeight = 0;
+        Resources res = AppGlobals.INSTANCE.get().getResources();
+        int resourceId = res.getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            statusBarHeight = res.getDimensionPixelSize(resourceId);
+        }
+        return statusBarHeight;
     }
 
     public static float getDensity(Context context) {
@@ -39,6 +82,5 @@ public class DisplayHelper {
     public static DisplayMetrics getDisplayMetrics(Context context) {
         return context.getResources().getDisplayMetrics();
     }
-
 
 }
