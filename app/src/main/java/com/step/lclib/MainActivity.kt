@@ -5,9 +5,12 @@ import android.graphics.PixelFormat
 import android.os.Bundle
 import android.util.Log
 import android.view.WindowManager
+import android.view.LayoutInflater
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.step.lclib.widget.bottomSheet.BottomDialog
 import com.step.lclib.widget.dialog.LcDialog
 import com.step.lclib.widget.dialog.LcTipDialog
 
@@ -52,9 +55,15 @@ class MainActivity : AppCompatActivity() {
 //        )
 
         findViewById<Button>(R.id.btn_test1).setOnClickListener {
-            var create = LcDialog.MessageBuilder(this)
+            /*var create = LcDialog.MessageBuilder(this)
                 .create()
-            create.show();
+            create.show();*/
+
+            var bottomDialog = BottomDialog.BottomSheetBuilder(this)
+                .setRealView(View.inflate(this, R.layout.dialog_bottom_sheet, null))
+                .build()
+
+            bottomDialog.show()
         }
 
         findViewById<Button>(R.id.btn_test2).setOnClickListener {

@@ -22,6 +22,15 @@
         <item name="android:windowIsFloating">true</item>
     </style>
 
+    <style name="LcDialog.BottomSheet" parent="LcDialog">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 为了避免在有 NavigationBar 的手机上 Dialog 从 NavigationBar 底部上来。去掉 Dialog 的动画，使用 View 的动画。-->
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
 
     <declare-styleable name="viewOutLineStrategy">
         <attr name="clip_radius" format="dimension"></attr>
