@@ -20,21 +20,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        testWindowManager()
 
-        findViewById<Button>(R.id.btn_test1).setOnClickListener {
-            testWindowManager()
-        }
-
+        testDialog()
     }
 
 
     fun testWindowManager() {
 
-        var textView = TextView(this)
-        textView.setText("我是全局添加的")
-        textView.setTextColor(Color.BLACK)
-        textView.setTextSize(18f)
-        textView.setBackgroundColor(Color.RED)
+        findViewById<Button>(R.id.btn_test1).setOnClickListener {
+            var textView = TextView(this)
+            textView.setText("我是全局添加的")
+            textView.setTextColor(Color.BLACK)
+            textView.setTextSize(18f)
+            textView.setBackgroundColor(Color.RED)
 //        var layoutParams = WindowManager.LayoutParams(
 //            WindowManager.LayoutParams.WRAP_CONTENT,
 //            WindowManager.LayoutParams.WRAP_CONTENT,
@@ -42,10 +41,11 @@ class MainActivity : AppCompatActivity() {
 //            WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
 //            PixelFormat.TRANSPARENT
 //        )
-        var layoutParams = WindowManager.LayoutParams()
-        windowManager.addView(
-            textView, layoutParams
-        )
+            var layoutParams = WindowManager.LayoutParams()
+            windowManager.addView(
+                textView, layoutParams
+            )
+        }
 
     }
 
@@ -55,15 +55,16 @@ class MainActivity : AppCompatActivity() {
 //        )
 
         findViewById<Button>(R.id.btn_test1).setOnClickListener {
-            /*var create = LcDialog.MessageBuilder(this)
+            var create = LcDialog.MessageBuilder(this)
                 .create()
-            create.show();*/
+            create.show();
 
-            var bottomDialog = BottomDialog.BottomSheetBuilder(this)
-                .setRealView(View.inflate(this, R.layout.dialog_bottom_sheet, null))
-                .build()
 
-            bottomDialog.show()
+            /*     var bottomDialog = BottomDialog.BottomSheetBuilder(this)
+                     .setRealView(View.inflate(this, R.layout.dialog_bottom_sheet, null))
+                     .build()
+
+                 bottomDialog.show()*/
         }
 
         findViewById<Button>(R.id.btn_test2).setOnClickListener {

@@ -28,7 +28,7 @@ public class LcDialog extends LcDialogBase {
     private Context mBaseContext;
 
     public LcDialog(Context context) {
-        this(context, R.style.LcDialog_Dialog);
+        this(context, R.style.LcDialog_Message);
     }
 
     public LcDialog(Context context, int theme) {
@@ -116,7 +116,7 @@ public class LcDialog extends LcDialogBase {
         }
 
         public LcDialog create(boolean cancelable) {
-            return create(cancelable, R.style.LcDialog_Dialog);
+            return create(cancelable, R.style.LcDialog_Message);
         }
 
 
