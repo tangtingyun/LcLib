@@ -21,10 +21,6 @@
         <item name="android:singleLine">true</item>
         <item name="android:gravity">center</item>
         <item name="android:ellipsize">end</item>
-        <item name="round_isRadiusAdjustBounds">true</item>
-        <item name="round_backgroundColor">@color/color_transparent</item>
-        <item name="round_borderWidth">1dp</item>
-        <item name="round_borderColor">@color/color_blue</item>
         <item name="android:textColor">@color/color_black</item>
     </style>
 
@@ -83,4 +79,49 @@
         <attr name="round_radiusBottomLeft" />
         <attr name="round_radiusBottomRight" />
     </declare-styleable>
+    
+    
+    <declare-styleable name="LcBackground">
+        <attr name="bg_shape" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+            <enum name="line" value="2"/>
+            <enum name="ring" value="3"/>
+        </attr>
+        
+        <attr name="bg_solid_color" format="color"/>
+        
+        <attr name="bg_radius" format="dimension"/>
+        <attr name="bg_bottomLeftRadius" format="dimension"/>
+        <attr name="bg_bottomRightRadius" format="dimension"/>
+        <attr name="bg_topLeftRadius" format="dimension"/>
+        <attr name="bg_topRightRadius" format="dimension"/>
+        
+
+        <attr name="bg_padding_left" format="dimension"/>
+        <attr name="bg_padding_top" format="dimension"/>
+        <attr name="bg_padding_right" format="dimension"/>
+        <attr name="bg_padding_bottom" format="dimension"/>
+
+        <attr name="bg_size_width" format="dimension">
+            <enum name="wrap_content" value="-2"/>
+            <enum name="match_parent" value="-1"/>
+        </attr>
+
+
+        <attr name="bg_size_height" format="dimension">
+
+            <enum name="wrap_content" value="-2"/>
+            <enum name="match_parent" value="-1"/>
+        </attr>
+
+        <attr name="bg_stroke_width" format="dimension"/>
+        <attr name="bg_stroke_color" format="color"/>
+        <attr name="bg_stroke_dashWidth" format="dimension"/>
+        <attr name="bg_stroke_dashGap" format="dimension"/>
+
+
+        
+    </declare-styleable>
+    
 </resources>
