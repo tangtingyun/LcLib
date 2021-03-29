@@ -1,5 +1,7 @@
 package com.step.lclib
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.graphics.PixelFormat
 import android.os.Bundle
@@ -13,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.step.lclib.widget.bottomSheet.BottomDialog
 import com.step.lclib.widget.dialog.LcDialog
 import com.step.lclib.widget.dialog.LcTipDialog
+import java.io.File
+import java.io.FileOutputStream
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,9 +24,35 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        testWindowManager()
+//      testWindowManager()
 
-        testDialog()
+//      testDialog()
+
+        testBitmap()
+    }
+
+
+    fun testBitmap() {
+
+
+        findViewById<Button>(R.id.btn_test1).setOnClickListener {
+
+            var bigBitmap = assets.open("aaa.png")
+            var decodeBitmap = BitmapFactory.decodeStream(bigBitmap)
+            var file = File(externalCacheDir, "test")
+            if (!file.exists()) {
+                file.mkdir()
+            }
+            var compressFile = File(file, "compress_big.webp");
+            var compressResult = decodeBitmap.compress(
+                Bitmap.CompressFormat.WEBP,
+                100,
+                FileOutputStream(compressFile)
+            )
+            Log.e(javaClass.simpleName, "testBitmap:   " + compressResult)
+            Log.e(javaClass.simpleName, "testBitmap:   " + compressFile.absolutePath)
+        }
+
     }
 
 
