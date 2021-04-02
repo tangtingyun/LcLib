@@ -1,10 +1,16 @@
 package com.step.lclib.widget.roundwidget;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
+import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.graphics.drawable.GradientDrawable;
+import android.os.Binder;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.AttributeSet;
 
 import com.step.lclib.R;
@@ -27,6 +33,38 @@ public class RoundDrawable extends GradientDrawable {
         mStrokeWidth = width;
         mStrokeColors = colors;
         super.setStroke(width, colors);
+    }
+
+
+    public void test() {
+        Handler handler;
+        Bitmap bitmap;
+        Looper looper;
+        ThreadLocal<String> stringThreadLocal1 = new ThreadLocal<>();
+        ThreadLocal<String> stringThreadLocal2 = new ThreadLocal<>();
+
+        stringThreadLocal1.set("aaaa");
+        stringThreadLocal2.set("bbb");
+
+//        new Watchdog();
+
+        Bundle bundle = new Bundle();
+
+        bundle.putBinder("bitmap", new Binder(){
+
+
+
+        });
+        Intent intent = new Intent();
+
+        intent.putExtras(bundle);
+
+        stringThreadLocal1.get();
+        stringThreadLocal2.get();
+
+
+        stringThreadLocal1.remove();
+        stringThreadLocal2.remove();
     }
 
     public int getStrokeWidth() {
@@ -70,14 +108,14 @@ public class RoundDrawable extends GradientDrawable {
     @Override
     protected void onBoundsChange(Rect r) {
         super.onBoundsChange(r);
-        if (mRadiusAdjustBounds){
-            setCornerRadius(Math.min(r.width(),r.height()/2));
+        if (mRadiusAdjustBounds) {
+            setCornerRadius(Math.min(r.width(), r.height() / 2));
         }
     }
 
     public static RoundDrawable fromAttributeSet(Context context,
                                                  AttributeSet attrs,
-                                                 int defStyleAttr){
+                                                 int defStyleAttr) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.RoundWidget, defStyleAttr, R.style.LcButton_Round);
         ColorStateList colorBg = typedArray.getColorStateList(R.styleable.RoundWidget_round_backgroundColor);
         ColorStateList colorBorder = typedArray.getColorStateList(R.styleable.RoundWidget_round_borderColor);

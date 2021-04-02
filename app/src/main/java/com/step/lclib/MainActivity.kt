@@ -1,17 +1,25 @@
 package com.step.lclib
 
+import android.content.ComponentName
+import android.content.Context
+import android.content.Intent
+import android.content.ServiceConnection
+import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.graphics.PixelFormat
 import android.os.Bundle
+import android.os.IBinder
 import android.util.Log
 import android.view.WindowManager
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.step.lclib.service.RemoteBitmapService
 import com.step.lclib.widget.bottomSheet.BottomDialog
 import com.step.lclib.widget.dialog.LcDialog
 import com.step.lclib.widget.dialog.LcTipDialog
@@ -28,7 +36,45 @@ class MainActivity : AppCompatActivity() {
 
 //      testDialog()
 
-        testBitmap()
+//        testBitmap()
+        testBitmap2()
+    }
+
+    private fun testBitmap2() {
+
+        var iRemoteService: IRemoteBitmap? = null;
+
+        findViewById<Button>(R.id.btn_test1).setOnClickListener {
+            /*   var decodeResource =
+                   BitmapFactory.decodeResource(applicationContext.resources, R.mipmap.ic_launcher)
+               findViewById<ImageView>(R.id.iv_remote).setImageBitmap(decodeResource)*/
+
+
+            var intent = Intent(this, RemoteBitmapService::class.java)
+
+            var connection = object : ServiceConnection {
+                //  尴尬 这个方法和onServiceConnected 并不是对应的 unbindService 并不会调用这个方法
+                // https://zhuanlan.zhihu.com/p/36892395
+                override fun onServiceDisconnected(name: ComponentName?) {
+                    Log.e("MainActivity", "onServiceDisconnected")
+                    iRemoteService = null
+                }
+
+                override fun onServiceConnected(name: ComponentName?, service: IBinder?) {
+                    iRemoteService = IRemoteBitmap.Stub.asInterface(service)
+                    var remoteBitmap = iRemoteService!!.getRemoteBitmap("")
+                    Log.e("MainActivity", "onServiceConnected")
+                    findViewById<ImageView>(R.id.iv_remote).setImageBitmap(remoteBitmap)
+
+                    unbindService(this)
+                }
+
+            };
+            bindService(intent, connection, Context.BIND_AUTO_CREATE);
+
+        }
+
+
     }
 
 
