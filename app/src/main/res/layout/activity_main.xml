@@ -5,7 +5,7 @@
     android:id="@+id/ll_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_blue"
+    android:background="@color/color_gray_7"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -28,11 +28,13 @@
         android:layout_height="wrap_content"
         android:text="测试按钮3" />
 
-    <Button
+    <com.step.lclib.widget.roundwidget.RoundButton
         android:id="@+id/btn_test4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="测试按钮4" />
+        android:text="测试按钮4"
+        app:round_isRadiusAdjustBounds="false"
+        app:round_radiusTopRight="20dp" />
 
 
     <ImageView

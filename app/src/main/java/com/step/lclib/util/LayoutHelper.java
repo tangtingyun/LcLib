@@ -19,6 +19,7 @@ package com.step.lclib.util;
 import android.annotation.TargetApi;
 import android.content.res.TypedArray;
 import android.graphics.Outline;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewOutlineProvider;
@@ -78,5 +79,12 @@ public class LayoutHelper {
         });
         owner.setClipToOutline(radius > 0);
         owner.invalidate();
+    }
+
+
+    public static void setBackgroundKeepingPadding(View view, Drawable drawable) {
+        int[] padding = new int[]{view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), view.getPaddingBottom()};
+        view.setBackground(drawable);
+        view.setPadding(padding[0], padding[1], padding[2], padding[3]);
     }
 }

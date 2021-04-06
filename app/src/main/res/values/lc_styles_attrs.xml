@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--基于OutLine 实现的圆角-->
+    <declare-styleable name="viewOutLineStrategy">
+        <attr name="clip_radius" format="dimension"></attr>
+        <attr name="clip_side" format="enum">
+            <enum name="all" value="0"></enum>
+            <enum name="left" value="1"></enum>
+            <enum name="top" value="2"></enum>
+            <enum name="right" value="3"></enum>
+            <enum name="bottom" value="4"></enum>
+        </attr>
+    </declare-styleable>
+
+
+    <!-- 圆角是否要自适应为 View 高度的一半 -->
+    <attr name="round_isRadiusAdjustBounds" format="boolean" />
+    <!-- 同时指定四个方向的圆角大小 -->
+    <attr name="round_radius" format="dimension" />
+    <!-- 指定左上方圆角的大小 -->
+    <attr name="round_radiusTopLeft" format="dimension" />
+    <!-- 指定右上方圆角的大小 -->
+    <attr name="round_radiusTopRight" format="dimension" />
+    <!-- 指定左下方圆角的大小 -->
+    <attr name="round_radiusBottomLeft" format="dimension" />
+    <!-- 指定右下方圆角的大小 -->
+    <attr name="round_radiusBottomRight" format="dimension" />
+    <!-- 指定背景颜色 -->
+    <attr name="round_backgroundColor" format="color" />
+    <!-- 指定边框颜色 -->
+    <attr name="round_borderColor" format="color" />
+    <!-- 指定边框宽度 -->
+    <attr name="round_borderWidth" format="dimension" />
+
+    <!--基于自定义drawable实现的圆角-->
+    <declare-styleable name="RoundWidget">
+        <attr name="round_backgroundColor" />
+        <attr name="round_borderColor" />
+        <attr name="round_borderWidth" />
+        <attr name="round_isRadiusAdjustBounds" />
+        <attr name="round_radius" />
+        <attr name="round_radiusTopLeft" />
+        <attr name="round_radiusTopRight" />
+        <attr name="round_radiusBottomLeft" />
+        <attr name="round_radiusBottomRight" />
+    </declare-styleable>
+
+
+</resources>
