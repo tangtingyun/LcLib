@@ -4,25 +4,21 @@ import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.ServiceConnection
-import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
-import android.graphics.PixelFormat
 import android.os.Bundle
 import android.os.IBinder
 import android.util.Log
 import android.view.WindowManager
-import android.view.LayoutInflater
-import android.view.View
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.step.lclib.service.RemoteBitmapService
-import com.step.lclib.widget.bottomSheet.BottomDialog
+import com.step.lclib.util.DisplayHelper
 import com.step.lclib.widget.dialog.LcDialog
 import com.step.lclib.widget.dialog.LcTipDialog
+import com.step.lclib.widget.popup.LcPopup
+import com.step.lclib.widget.popup.LcPopups
 import java.io.File
 import java.io.FileOutputStream
 
@@ -37,7 +33,38 @@ class MainActivity : AppCompatActivity() {
 //      testDialog()
 
 //        testBitmap()
-        testBitmap2()
+//        testBitmap2()
+
+        testPopup();
+    }
+
+    private fun testPopup() {
+        findViewById<Button>(R.id.btn_popup).setOnClickListener { target ->
+            val textView = TextView(this)
+            textView.setLineSpacing(DisplayHelper.dp2px(4f).toFloat(), 1.0f)
+            val padding: Int = DisplayHelper.dp2px(20f)
+            textView.setPadding(padding, padding, padding, padding)
+            textView.text = "QMUIBasePopup 可以设置其位置以及显示和隐藏的动画"
+            textView.setTextColor(resources.getColor(R.color.color_blue))
+            LcPopups.popup(this, DisplayHelper.dp2px(250f))
+                .preferredDirection(LcPopup.DIRECTION_TOP)
+                .view(textView)
+                .edgeProtection(DisplayHelper.dp2px(20f))
+                .offsetX(DisplayHelper.dp2px(20f))
+                .offsetYIfBottom(DisplayHelper.dp2px(5f))
+                .shadow(true)
+                .arrow(true)
+                .animStyle(LcPopup.ANIM_GROW_FROM_CENTER)
+                .onDismiss {
+                    Toast.makeText(
+                        this,
+                        "onDismiss",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+                .show(target);
+        }
+
     }
 
     private fun testBitmap2() {

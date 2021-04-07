@@ -68,4 +68,53 @@
 
     <!--********************* Dialog *********************-->
 
+
+
+    <!--********************* PopupWindow *********************-->
+
+
+    <style name="Lc.Animation" parent="@android:style/Animation" />
+
+    <style name="Lc.Animation.Scale">
+        <item name="android:windowEnterAnimation">@anim/scale_in_center</item>
+        <item name="android:windowExitAnimation">@anim/scale_out_center</item>
+    </style>
+
+    <style name="Lc.Animation.PopUpMenu" />
+
+    <style name="Lc.Animation.PopUpMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Lc.Animation.PopUpMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Lc.Animation.PopUpMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+
+    <style name="Lc.Animation.PopDownMenu" />
+
+    <style name="Lc.Animation.PopDownMenu.Center">
+        <item name="android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Lc.Animation.PopDownMenu.Left">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Lc.Animation.PopDownMenu.Right">
+        <item name="android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <!--********************* PopupWindow *********************-->
+
 </resources>
