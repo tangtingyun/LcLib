@@ -488,7 +488,6 @@ public class LcNormalPopup<T extends LcBasePopup> extends LcBasePopup<T> {
         private View mContentView;
         private Paint mArrowPaint;
         private Path mArrowPath;
-        private RectF mArrowSaveRect = new RectF();
 
         private int mPendingWidth;
         private int mPendingHeight;
@@ -564,7 +563,6 @@ public class LcNormalPopup<T extends LcBasePopup> extends LcBasePopup<T> {
             if (mShowArrow) {
                 if (mShowInfo.direction == DIRECTION_TOP) {
                     canvas.save();
-                    mArrowSaveRect.set(0f, 0f, mShowInfo.width, mShowInfo.height);
                     mArrowPaint.setStyle(Paint.Style.FILL);
                     mArrowPaint.setColor(mBgColor);
                     mArrowPaint.setXfermode(null);
