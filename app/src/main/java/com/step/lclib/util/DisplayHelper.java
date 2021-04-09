@@ -1,5 +1,6 @@
 package com.step.lclib.util;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Point;
@@ -83,4 +84,31 @@ public class DisplayHelper {
         return context.getResources().getDisplayMetrics();
     }
 
+
+    /**
+     * 获取上下文所在的尺寸
+     *
+     * @param context 上下文
+     * @param isReal  是否是真实的尺寸
+     * @return 上下文所在的尺寸
+     */
+    public static Point getDisplaySize(Context context, boolean isReal) {
+        WindowManager windowManager;
+        if (context instanceof Activity) {
+            windowManager = ((Activity) context).getWindowManager();
+        } else {
+            windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        }
+        if (windowManager == null) {
+            return null;
+        }
+        Display display = windowManager.getDefaultDisplay();
+        Point point = new Point();
+        if (isReal) {
+            display.getRealSize(point);
+        } else {
+            display.getSize(point);
+        }
+        return point;
+    }
 }
