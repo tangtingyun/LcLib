@@ -7,6 +7,7 @@ import android.content.ServiceConnection
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
+import android.net.Uri
 import android.os.Bundle
 import android.os.IBinder
 import android.util.Log
@@ -35,7 +36,22 @@ class MainActivity : AppCompatActivity() {
 //        testBitmap()
 //        testBitmap2()
 
-        testPopup();
+//        testPopup();
+
+        textExport();
+    }
+
+    private fun textExport() {
+        //   https://juejin.cn/post/6845166891523112973
+        findViewById<Button>(R.id.btn_popup).setOnClickListener { target ->
+            var intent = Intent(Intent.ACTION_VIEW, Uri.parse("zyf://palmyou:8080/test"))
+            if (intent.resolveActivity(packageManager) != null) {
+                startActivity(intent)
+            } else {
+                Log.e("MainActivity", "没有可启动的");
+            }
+        }
+
     }
 
     private fun testPopup() {
