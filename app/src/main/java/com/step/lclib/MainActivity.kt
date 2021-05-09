@@ -11,6 +11,7 @@ import android.graphics.Color
 import android.graphics.PixelFormat
 import android.os.Bundle
 import android.os.IBinder
+import android.os.PersistableBundle
 import android.util.Log
 import android.view.WindowManager
 import android.view.LayoutInflater
@@ -19,6 +20,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager.widget.ViewPager
 import com.step.lclib.service.RemoteBitmapService
 import com.step.lclib.widget.bottomSheet.BottomDialog
 import com.step.lclib.widget.dialog.LcDialog
@@ -37,7 +39,41 @@ class MainActivity : AppCompatActivity() {
 //      testDialog()
 
 //        testBitmap()
-        testBitmap2()
+//        testBitmap2()
+        testBitmap3()
+    }
+
+    private fun testBitmap3() {
+
+
+        findViewById<Button>(R.id.btn_test1).setOnClickListener {
+
+            var bigBitmap = assets.open("aaa.png")
+
+            var options = BitmapFactory.Options()
+            options.inSampleSize = 4;
+
+            var decodeBitmap = BitmapFactory.decodeStream(bigBitmap, null, options)
+
+            var file = File(externalCacheDir, "test")
+            if (!file.exists()) {
+                file.mkdir()
+            }
+
+            file.length()
+
+
+            var compressFile = File(file, "compress_sample2.png");
+
+            var compressResult = decodeBitmap?.compress(
+                Bitmap.CompressFormat.PNG,
+                60,
+                FileOutputStream(compressFile)
+            )
+            Log.e(javaClass.simpleName, "testBitmap:   " + compressResult)
+            Log.e(javaClass.simpleName, "testBitmap:   " + compressFile.absolutePath)
+        }
+
     }
 
     private fun testBitmap2() {
@@ -171,4 +207,16 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        ViewPager(this)
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+    }
+
 }
