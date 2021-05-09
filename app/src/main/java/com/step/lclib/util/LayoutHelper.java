@@ -20,6 +20,7 @@ import android.annotation.TargetApi;
 import android.content.res.TypedArray;
 import android.graphics.Outline;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewOutlineProvider;
@@ -43,6 +44,9 @@ public class LayoutHelper {
     }
 
     public static void setViewOutline(View owner, final int radius, final int radiusSide) {
+        if (owner == null) {
+            return;
+        }
         //需要版本大于5.0
         if (!DeviceHelper.useFeature()) return;
         owner.setOutlineProvider(new ViewOutlineProvider() {
@@ -82,9 +86,63 @@ public class LayoutHelper {
     }
 
 
+    public static void setViewOutlineAndShadow(
+            View owner, final int radius, final int radiusSide,
+            int shadowElevation, float shadowAlpha
+    ) {
+        if (owner == null) {
+            return;
+        }
+        //需要版本大于5.0
+        if (!DeviceHelper.useFeature()) return;
+
+        owner.setElevation(shadowElevation);
+        if (shadowElevation == 0) {
+            // outline.setAlpha will work even if shadowElevation == 0
+            shadowAlpha = 1f;
+        }
+        final float finalShadowAlpha = shadowAlpha;
+
+        owner.setOutlineProvider(new ViewOutlineProvider() {
+            @Override
+            @TargetApi(21)
+            public void getOutline(View view, Outline outline) {
+                outline.setAlpha(finalShadowAlpha);
+                int w = view.getWidth(), h = view.getHeight();
+                if (w == 0 || h == 0) {
+                    return;
+                }
+                if (radiusSide != RADIUS_ALL) {
+                    int left = 0, top = 0, right = w, bottom = h;
+                    if (radiusSide == RADIUS_LEFT) {
+                        right += radius;
+                    } else if (radiusSide == RADIUS_TOP) {
+                        bottom += radius;
+                    } else if (radiusSide == RADIUS_RIGHT) {
+                        left -= radius;
+                    } else if (radiusSide == RADIUS_BOTTOM) {
+                        top -= radius;
+                    }
+                    outline.setRoundRect(left, top, right, bottom, radius);
+                    return;
+                }
+
+                int top = 0, bottom = h, left = 0, right = w;
+                if (radius <= 0) {
+                    outline.setRect(left, top, right, bottom);
+                } else {
+                    outline.setRoundRect(left, top, right, bottom, radius);
+                }
+            }
+        });
+        owner.setClipToOutline(radius > 0);
+        owner.invalidate();
+    }
+
     public static void setBackgroundKeepingPadding(View view, Drawable drawable) {
         int[] padding = new int[]{view.getPaddingLeft(), view.getPaddingTop(), view.getPaddingRight(), view.getPaddingBottom()};
         view.setBackground(drawable);
         view.setPadding(padding[0], padding[1], padding[2], padding[3]);
     }
+
 }

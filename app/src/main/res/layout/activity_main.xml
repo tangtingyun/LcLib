@@ -5,7 +5,7 @@
     android:id="@+id/ll_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_gray_7"
+    android:background="@color/colorPrimary"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -41,5 +41,12 @@
         android:id="@+id/iv_remote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_popup"
+        android:text="Popup"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
