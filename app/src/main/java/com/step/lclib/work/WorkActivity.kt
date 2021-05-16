@@ -20,22 +20,21 @@ class WorkActivity : AppCompatActivity() {
         binding = ActivityWorkBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        if (savedInstanceState == null) {
-            val bundle = Bundle()
-            bundle.putInt("some_int", 0)
-            supportFragmentManager.beginTransaction()
-                .setReorderingAllowed(true)
-                .add(R.id.btn_dialog_cancel, BizDialogFragment::class.java, Bundle())
-                .commit()
-
-
-        }
-
+//        if (savedInstanceState == null) {
+//            val bundle = Bundle()
+//            bundle.putInt("some_int", 0)
+//            supportFragmentManager.beginTransaction()
+//                .setReorderingAllowed(true)
+//                .add(R.id.btn_dialog_cancel, BizDialogFragment::class.java, Bundle())
+//                .commit()
+//        }
 
 
         binding.btnPopup.setOnClickListener {
             var bizDialogFragment = BizDialogFragment()
             bizDialogFragment.show(supportFragmentManager, BizDialogFragment.TAG)
+
+            StorageCase.test(this)
 
             Log.e(AppConstant.TAG, "onCreate: ${bizDialogFragment.isAdded}")
             Log.e(
