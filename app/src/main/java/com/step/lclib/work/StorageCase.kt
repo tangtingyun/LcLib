@@ -1,9 +1,18 @@
 package com.step.lclib.work
 
+import android.Manifest
+import android.app.Activity
 import android.content.Context
+import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.os.Build
 import android.os.Environment
 import android.util.Log
+import androidx.core.app.ActivityCompat
+import com.step.lclib.R
+import java.io.File
+import java.io.FileOutputStream
 
 object StorageCase {
 
@@ -35,5 +44,41 @@ object StorageCase {
 //            Environment.getExternalStorageDirectory()
 //            Environment.getExternalStoragePublicDirectory("")
         }
+    }
+
+
+    fun testImage(context: Activity) {
+        var decodeResource = BitmapFactory.decodeResource(context.resources, R.mipmap.ic_launcher)
+
+
+        decodeResource.compress(
+            Bitmap.CompressFormat.PNG,
+            100,
+            FileOutputStream(File(context.cacheDir, "aaa.png"))
+        )
+        decodeResource.compress(
+            Bitmap.CompressFormat.PNG,
+            100,
+            FileOutputStream(File(context.externalCacheDir, "bbb.png"))
+        )
+
+        if (ActivityCompat.checkSelfPermission(
+                context,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
+            decodeResource.compress(
+                Bitmap.CompressFormat.PNG,
+                100,
+                FileOutputStream(File(context.cacheDir, "ccc.png"))
+            )
+        }
+
+        ActivityCompat.requestPermissions(
+            context,
+            arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),
+            999
+        )
+
     }
 }
