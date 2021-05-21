@@ -38,7 +38,12 @@ class WorkActivity : AppCompatActivity() {
 
 //            storageTest()
 
-            setHtml()
+//            setHtml()
+
+            MediaCase.play(this, "bell/ding02.mp3")
+            it.postDelayed({
+                MediaCase.play(this, "bell/ding01.mp3")
+            }, 200)
         }
 
     }
