@@ -12,20 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".work.WorkJavaActivity">
-            <!-- <intent-filter>
-                 <action android:name="android.intent.action.MAIN" />
-
-                 <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>-->
-        </activity>
-        <activity android:name=".work.WorkActivity">
+        <activity android:name=".work.page.Sample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".work.page.WorkJavaActivity"></activity>
+        <activity android:name=".work.page.WorkActivity"></activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".ConstrainTestActivity" />
         <activity android:name=".jetpack.LifecycleActivity" />
