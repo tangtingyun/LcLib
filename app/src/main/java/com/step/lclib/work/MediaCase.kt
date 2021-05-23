@@ -84,7 +84,7 @@ class FlutterAudio private constructor() {
                 openFd.close()
                 isLooping = isRepeat
                 setOnErrorListener { mp, what, extra ->
-                    lclog("Flutter player error: mp    ->  $mp what  ->  $what extra ->  $extra")
+                    lclog("Flutter player error: mp  ->  $mp what  ->  $what extra ->  $extra")
                     false
                 }
                 setOnCompletionListener { mp ->
