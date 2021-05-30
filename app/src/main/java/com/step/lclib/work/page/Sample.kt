@@ -21,7 +21,7 @@ class Sample : AppCompatActivity() {
         packageManager.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES)
             .activities
             .filter {
-                it.name.startsWith("com.step.lclib.work.page") && it.name != this::class.java.name
+                it.name.startsWith("com.step.lclib.work") && it.name != this::class.java.name
             }.map {
                 Class.forName(it.name)
             }.forEach { clazz ->
