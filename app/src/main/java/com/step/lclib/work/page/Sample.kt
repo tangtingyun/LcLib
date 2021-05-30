@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.widget.LinearLayout
 import androidx.appcompat.widget.AppCompatButton
 import com.step.lclib.R
+import com.step.lclib.work.WindowCase
 
 class Sample : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,6 +34,16 @@ class Sample : AppCompatActivity() {
                 })
 
             }
+
+        window.decorView.post {
+            WindowCase.testAddView(this)
+        }
+
+
+    }
+
+    override fun onResume() {
+        super.onResume()
 
     }
 }

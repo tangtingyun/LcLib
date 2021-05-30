@@ -17,6 +17,7 @@ class WorkActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityWorkBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityWorkBinding.inflate(layoutInflater)
@@ -52,6 +53,14 @@ class WorkActivity : AppCompatActivity() {
         }
     }
 
+
+    /**
+     * @description
+     * @param
+     * @return
+     * @author zhangyifei
+     * @time 21/5/30 下午4:16
+     */
     private fun mediaTest(view: View) {
 
     }
