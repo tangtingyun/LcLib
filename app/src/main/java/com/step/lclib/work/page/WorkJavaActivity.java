@@ -11,6 +11,12 @@ import com.step.lclib.work.OnPermissionResult;
 import com.step.lclib.work.PermissionDialog;
 import com.step.lclib.work.StorageCase;
 
+
+/**
+ * @author zhangyifei
+ * @time 21/5/30 下午4:11
+ * @description
+ */
 public class WorkJavaActivity extends AppCompatActivity {
 
     @Override

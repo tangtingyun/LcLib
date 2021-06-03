@@ -23,6 +23,9 @@ object StorageCase {
 
     fun test(context: Activity) {
         context.apply {
+
+
+            lclog("系统相册位置: ${MediaStore.Images.Media.EXTERNAL_CONTENT_URI}")
             // 内部存储目录 无需申请权限
 
             // filesDir  /data/user/0/com.step.lclib/files
@@ -61,8 +64,12 @@ object StorageCase {
             if (!file.exists()) {
                 lclog("什么鬼 " + file.mkdir().toString())
             }
+            useMediaStorage(
+                this,
+                BitmapFactory.decodeResource(context.resources, R.drawable.dinosaur)
+            )
 
-            testImage(context)
+//            testImage(context)
         }
     }
 

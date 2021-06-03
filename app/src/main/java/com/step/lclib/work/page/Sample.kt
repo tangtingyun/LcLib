@@ -11,6 +11,7 @@ import android.view.WindowManager
 import android.widget.LinearLayout
 import androidx.appcompat.widget.AppCompatButton
 import com.step.lclib.R
+import com.step.lclib.work.WindowCase
 
 class Sample : AppCompatActivity() {
 
@@ -44,7 +45,7 @@ class Sample : AppCompatActivity() {
         packageManager.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES)
             .activities
             .filter {
-                it.name.startsWith("com.step.lclib.work.page") && it.name != this::class.java.name
+                it.name.startsWith("com.step.lclib.work") && it.name != this::class.java.name
             }.map {
                 Class.forName(it.name)
             }.forEach { clazz ->
@@ -57,6 +58,16 @@ class Sample : AppCompatActivity() {
                 })
 
             }
+
+        window.decorView.post {
+            WindowCase.testAddView(this)
+        }
+
+
+    }
+
+    override fun onResume() {
+        super.onResume()
 
     }
 }
