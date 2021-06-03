@@ -17,7 +17,7 @@ import kotlinx.coroutines.launch
 
 
 fun EditText.textChanges(): Flow<CharSequence?> {
-    return callbackFlow {
+    return    callbackFlow {
         val listener = object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
             }
