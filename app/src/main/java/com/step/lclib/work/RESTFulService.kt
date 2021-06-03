@@ -8,7 +8,7 @@ import retrofit2.Retrofit
 import java.io.File
 import java.util.concurrent.TimeUnit
 
-private const val BASE_URL = ""
+private const val BASE_URL = "https://gank.io"
 
 private val cacheFile by lazy {
     File(AppGlobals.getApplication().cacheDir, "webServiceApi").apply {

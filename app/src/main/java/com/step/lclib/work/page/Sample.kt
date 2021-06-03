@@ -16,28 +16,28 @@ import com.step.lclib.work.WindowCase
 class Sample : AppCompatActivity() {
 
 
-    override fun onWindowFocusChanged(hasFocus: Boolean) {
-        super.onWindowFocusChanged(hasFocus)
-        if (hasFocus && Build.VERSION.SDK_INT >= 19) {
-            var decorView = window.decorView;
-            decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                    or (View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION)
-                    or (View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
-                    or (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION)
-                    or (View.SYSTEM_UI_FLAG_FULLSCREEN)
-                    or (View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY))
-        }
-    }
+//    override fun onWindowFocusChanged(hasFocus: Boolean) {
+//        super.onWindowFocusChanged(hasFocus)
+//        if (hasFocus && Build.VERSION.SDK_INT >= 19) {
+//            var decorView = window.decorView;
+//            decorView.systemUiVisibility = (View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+//                    or (View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION)
+//                    or (View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
+//                    or (View.SYSTEM_UI_FLAG_HIDE_NAVIGATION)
+//                    or (View.SYSTEM_UI_FLAG_FULLSCREEN)
+//                    or (View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY))
+//        }
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sample)
 
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN);//设置全屏
+//        window.setFlags(
+//            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//            WindowManager.LayoutParams.FLAG_FULLSCREEN);//设置全屏
 
-        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+//        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
 
         val linearLayout = findViewById<LinearLayout>(R.id.ll_sample_root)
 
@@ -60,7 +60,7 @@ class Sample : AppCompatActivity() {
             }
 
         window.decorView.post {
-            WindowCase.testAddView(this)
+//            WindowCase.testAddView(this)
         }
 
 

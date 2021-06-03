@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +17,6 @@
         <activity android:name=".work.page.WindowManagerAct" />
         <activity android:name=".work.page.StorageActivity" />
         <activity android:name=".work.page.FlowActivity"></activity>
-        <activity android:name=".work.page.StorageActivity" />
         <activity android:name=".work.page.Sample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
