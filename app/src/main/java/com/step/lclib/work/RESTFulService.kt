@@ -5,6 +5,7 @@ import okhttp3.Cache
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
 import java.io.File
 import java.util.concurrent.TimeUnit
 
@@ -24,9 +25,14 @@ val retrofit by lazy {
                 .readTimeout(60, TimeUnit.SECONDS)
                 .writeTimeout(60, TimeUnit.SECONDS)
                 .cache(Cache(cacheFile, 1024 * 1024 * 1024))
-                .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
+                .addInterceptor(HttpLoggingInterceptor(object : HttpLoggingInterceptor.Logger {
+                    override fun log(message: String) {
+                        lclog(message)
+                    }
+                }).setLevel(HttpLoggingInterceptor.Level.BODY))
                 .build()
         )
+        .addConverterFactory(ScalarsConverterFactory.create())
         .baseUrl(BASE_URL)
         .build()
 }
