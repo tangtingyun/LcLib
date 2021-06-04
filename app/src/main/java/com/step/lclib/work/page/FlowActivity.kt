@@ -31,6 +31,7 @@ class WanRepository {
 
 //  https://qiita.com/kaleidot725/items/bcb41be03854b11aee61
 // https://zenn.dev/chmod644/articles/fc304b7e2508de
+// https://zhaoshuming.github.io/2020/09/07/android-kotlin-flow/
 
 @Suppress("BlockingMethodInNonBlockingContext")
 fun <T> apiFlow(call: suspend () -> Call<T?>): Flow<Result<T?>> =
