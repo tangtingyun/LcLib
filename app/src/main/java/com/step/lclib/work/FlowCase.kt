@@ -6,10 +6,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.channels.sendBlocking
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.callbackFlow
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.flowOn
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.HttpException
@@ -18,16 +14,17 @@ import retrofit2.http.GET
 import kotlinx.coroutines.cancel as flowCancel
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.channels.sendBlocking
+import kotlinx.coroutines.flow.*
 
 interface FlowApiService {
     @GET("foo")
-    suspend fun getFoo(): List<String>
+    fun getFoo(): Call<String>
 }
 
 
 class FlowRepository(private val api: FlowApiService) {
 
-    fun getFoo(): Flow<List<String>> {
+    fun getFoo(): Flow<Call<String>> {
         return flow {
             // exectute API call and map to UI object
             val fooList = api.getFoo()
@@ -51,8 +48,6 @@ object FlowCase {
 
 
 }
-
-
 
 
 @Deprecated("没把握")
@@ -85,3 +80,13 @@ private fun errorMsg(response: Response<R>): String? {
         msg
     }
 }
+
+
+fun <T> apiFlow2(call: suspend () -> Call<T>): Flow<Result<T>> =
+    flow {
+        val response = call().execute()
+        response.takeIf { it.isSuccessful }?.body()?.let { emit(Result.success(it)) }
+            ?: throw HttpException(response)
+    }.catch { it: Throwable ->
+        emit(Result.failure(it))
+    }.flowOn(Dispatchers.IO)
