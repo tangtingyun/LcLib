@@ -75,7 +75,9 @@ class FlowActivity : AppCompatActivity() {
                 lclog("apiFlow 111 ->   ")
                 delay(3000)
                 repository.getRandomAndroid()
-                    .map { it }
+                    .map {
+                        it
+                    }
                     .flatMapConcat {
                         lclog("返回值是什么：  ${it.getOrNull()}")
                         delay(3000)
