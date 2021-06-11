@@ -1,17 +1,14 @@
 package com.step.lclib.work.page
 
 import android.content.Intent
-import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
-import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.view.WindowManager
 import android.widget.LinearLayout
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.step.lclib.R
-import com.step.lclib.work.WindowCase
+import com.step.lclib.work.lclog
+import java.util.*
 
 class Sample : AppCompatActivity() {
 
@@ -69,5 +66,18 @@ class Sample : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
+        lclog("current year ->  ${getCurrentDayOfYear()}")
+    }
+
+    //获取指定时间的一年中的第几天
+    fun getDayOfYear(currentTimeMillis: String): Int {
+        val calendar = Calendar.getInstance()
+        val date = Date(currentTimeMillis.toLong())
+        calendar.time = date
+        return calendar[Calendar.DAY_OF_YEAR]
+    }
+
+    fun getCurrentDayOfYear(): Int {
+        return Calendar.getInstance()[Calendar.DAY_OF_YEAR]
     }
 }
