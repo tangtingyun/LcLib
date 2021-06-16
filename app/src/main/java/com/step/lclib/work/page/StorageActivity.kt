@@ -9,7 +9,6 @@ import android.view.WindowManager
 import android.widget.Button
 import com.step.lclib.R
 import com.step.lclib.work.StorageCase
-import com.step.lclib.work.VipVideoSaleTitleView
 
 class StorageActivity : AppCompatActivity() {
     companion object {
@@ -31,13 +30,12 @@ class StorageActivity : AppCompatActivity() {
         )
 
         findViewById<Button>(R.id.btn_storage).setOnClickListener {
-            StorageCase.test(this)
+//            StorageCase.test(this)
+            StorageCase.insertDept(this)
         }
     }
 
     override fun onResume() {
         super.onResume()
-
-        val view = VipVideoSaleTitleView(this)
     }
 }

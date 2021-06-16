@@ -4,16 +4,22 @@ package com.step.lclib.work.scheme
 //https://tech.meituan.com/2018/08/23/meituan-waimai-android-open-source-routing-framework.html
 object SchemeDispatch {
 
+    private var sHasRegister = false;
 
     fun openUri(request: UriRequest) {
+        ensureInit();
+        MainUriHandler().handleChain(request)
+    }
 
-        MainUriHandler.instance.handle(request, object : UriCallback {
-            override fun onNext() {
-                MainUriHandler.instance.handle(request, this)
-            }
+    private fun ensureInit() {
+        if (!sHasRegister) {
+            init()
+            sHasRegister = true;
+        }
+    }
 
-            override fun onComplete(resultCode: Int) {
-            }
-        })
+
+    fun init() {
+        MainUriHandler.register(DriveUriHandler())
     }
 }

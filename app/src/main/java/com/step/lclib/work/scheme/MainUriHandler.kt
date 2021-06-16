@@ -1,39 +1,35 @@
 package com.step.lclib.work.scheme
 
-import android.util.ArrayMap
+import android.util.SparseArray
+import androidx.core.util.valueIterator
 
-class MainUriHandler private constructor() : UriHandler() {
+@Suppress("NAME_SHADOWING")
+class MainUriHandler {
 
     companion object {
-        val instance = SingletonProvider.holder
-    }
 
-    private object SingletonProvider {
-        val holder = MainUriHandler()
-    }
+        private val mArrayMap = SparseArray<UriHandler>()
 
-
-    private val mArrayMap = ArrayMap<UriRequest, UriHandler?>()
-
-    fun register(uriRequest: UriRequest, uriHandler: UriHandler?) {
-        if (mArrayMap.containsKey(uriRequest)) {
-            mArrayMap[uriRequest] = uriHandler
+        fun register(uriHandler: UriHandler) {
+            if (mArrayMap.indexOfValue(uriHandler) >= 0) {
+                mArrayMap.append(0, uriHandler)
+            }
         }
     }
 
-    override fun handle(
-        request: UriRequest,
-        callback: UriCallback
+    fun handleChain(
+        request: UriRequest
     ) {
-        val uriHandler = mArrayMap[request]
-        uriHandler?.handle(request, object : UriCallback {
-            override fun onNext() {
-                callback.onNext()
-            }
-
-            override fun onComplete(resultCode: Int) {
-                callback.onComplete(resultCode)
-            }
-        })
+        var valueIterator = mArrayMap.valueIterator()
+        if (valueIterator.hasNext()) {
+            val uriHandler = valueIterator.next();
+            uriHandler.handle(request, object : UriCallback {
+                override fun onNext() {
+                    handleChain(request)
+                }
+            })
+        }
     }
+
+
 }

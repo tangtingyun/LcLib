@@ -105,6 +105,10 @@ dependencies {
     // Jetpack Compose Integration
 //    implementation "androidx.navigation:navigation-compose:1.0.0-alpha10"
 
+
+    // https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-process
+    implementation group: 'androidx.lifecycle', name: 'lifecycle-process', version: '2.3.1'
+
 }
 
 

@@ -21,6 +21,15 @@ import java.io.FileOutputStream
 
 object StorageCase {
 
+    fun insertDept(context: Activity) {
+        MediaStore.Images.Media.insertImage(
+            context.contentResolver,
+            BitmapFactory.decodeResource(context.resources, R.drawable.dinosaur),
+            "hello dep",
+            "i am a test"
+        )
+    }
+
     fun test(context: Activity) {
         context.apply {
 
