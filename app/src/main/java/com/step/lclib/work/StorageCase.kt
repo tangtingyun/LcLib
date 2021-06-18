@@ -2,7 +2,6 @@ package com.step.lclib.work
 
 import android.Manifest
 import android.app.Activity
-import android.content.ContentProvider
 import android.content.ContentResolver
 import android.content.ContentValues
 import android.content.pm.PackageManager
@@ -14,7 +13,10 @@ import android.os.Build
 import android.os.Environment
 import android.provider.MediaStore
 import androidx.core.app.ActivityCompat
+import com.blankj.utilcode.util.FileIOUtils
+import com.blankj.utilcode.util.UriUtils
 import com.step.lclib.R
+import com.step.lclib.work.utils.SavaBlumUtils
 import java.io.File
 import java.io.FileOutputStream
 
@@ -22,13 +24,87 @@ import java.io.FileOutputStream
 object StorageCase {
 
     fun insertDept(context: Activity) {
-        MediaStore.Images.Media.insertImage(
-            context.contentResolver,
-            BitmapFactory.decodeResource(context.resources, R.drawable.dinosaur),
-            "hello dep",
-            "i am a test"
+        /* var insertImage = MediaStore.Images.Media.insertImage(
+             context.contentResolver,
+             BitmapFactory.decodeResource(context.resources, R.drawable.lbxx),
+             "hello_dep",
+             "i am a test"
+         )*/
+
+        lclog("${File.pathSeparator}")
+        lclog("${File.separator}")
+
+        var file = File(context.externalCacheDir, "lbxxx.gif")
+        FileIOUtils.writeFileFromIS(
+            file,
+            context.assets.open("lbxx.gif")
         )
+        var insertImage = SavaBlumUtils.insertImage(
+            context.contentResolver,
+            file.absolutePath,
+            "self_save",
+            "image/gif", "testlc"
+        )
+
+        lclog("insertImage ->   $insertImage")
+        lclog("insertImage ->   ${UriUtils.uri2File(Uri.parse(insertImage)).absolutePath}")
+        queryAll(context)
     }
+
+    fun queryAll(context: Activity) {
+
+
+        Thread {
+            val projection = arrayOf(
+                MediaStore.Images.Media.BUCKET_DISPLAY_NAME,
+                MediaStore.Images.Media.DATA,
+                MediaStore.Images.Media.MIME_TYPE
+            )
+            val contentResolver = context.contentResolver
+            val cursor = contentResolver.query(
+                MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                null,
+                null,
+                null,
+                MediaStore.Images.ImageColumns.DATE_ADDED + " DESC"
+            )
+
+            cursor?.let {
+                val bucketIndex = it.getColumnIndex(MediaStore.Images.Media.BUCKET_DISPLAY_NAME)
+                val dataIndex = it.getColumnIndex(MediaStore.Images.Media.DATA)
+                val typeIndex = it.getColumnIndex(MediaStore.Images.Media.MIME_TYPE)
+                val sizeIndex = it.getColumnIndex(MediaStore.Images.Media.SIZE)
+                val heightIndex = it.getColumnIndex(MediaStore.Images.Media.HEIGHT)
+                val widthIndex = it.getColumnIndex(MediaStore.Images.Media.WIDTH)
+                val addIndex = it.getColumnIndex(MediaStore.Images.Media.DATE_ADDED)
+
+                while (it.moveToNext()) {
+                    val bucket = it.getString(bucketIndex)
+                    val data = it.getString(dataIndex)
+                    val type = it.getString(typeIndex)
+                    val size = it.getString(sizeIndex)
+                    val height = it.getString(heightIndex)
+                    val width = it.getString(widthIndex)
+                    val add = it.getString(addIndex)
+                    lclog(
+                        """
+                        bucket ->                       $bucket
+                        data ->                         $data                        
+                        type ->                         $type
+                        size ->                         $size
+                        height ->                       $height
+                        width ->                        $width
+                        add ->                          $add
+                    """.trimIndent()
+                    )
+
+                }
+
+                cursor.close()
+            }
+        }.start()
+    }
+
 
     fun test(context: Activity) {
         context.apply {

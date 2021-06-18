@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.step.lclib.R
 import com.step.lclib.work.lclog
+import cn.eclicks.drivingtest.utils.DtHelper
+import java.nio.charset.Charset
 import java.util.*
 
 class Sample : AppCompatActivity() {
@@ -67,6 +69,19 @@ class Sample : AppCompatActivity() {
         super.onResume()
 
         lclog("current year ->  ${getCurrentDayOfYear()}")
+
+        // 只有需要给答案，那么才加载答案
+        val answer = "bc54ee1d7bbc78633e2033cea9257e69"
+        var realAnswer = ""
+        try {
+            val tmp: ByteArray = DtHelper.hexStringToBytes(answer)
+            val out: ByteArray =
+                DtHelper.answer(this, tmp, System.currentTimeMillis(), 1)
+            realAnswer = String(out, Charset.forName("UTF-8"))
+        } catch (e: Exception) {
+        }
+
+        lclog("realAnswer ->   $realAnswer")
     }
 
     //获取指定时间的一年中的第几天

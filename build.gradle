@@ -17,6 +17,9 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url "http://repertory.oa.com:8081/nexus/content/groups/public"
+        }
         google()
         jcenter()
     }
