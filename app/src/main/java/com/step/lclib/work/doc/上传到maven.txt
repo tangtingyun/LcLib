@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/62284466/how-to-build-and-maven-publish-a-flutter-aar
+
+一种修改flutter build aar 工具源码的方案 直接上传到远程
