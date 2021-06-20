@@ -21,33 +21,31 @@ import java.io.File
 import java.io.FileOutputStream
 
 
+// https://www.jianshu.com/p/d5573e312bb8
 object StorageCase {
 
     fun insertDept(context: Activity) {
-        /* var insertImage = MediaStore.Images.Media.insertImage(
-             context.contentResolver,
-             BitmapFactory.decodeResource(context.resources, R.drawable.lbxx),
-             "hello_dep",
-             "i am a test"
-         )*/
+//        var insertImage = MediaStore.Images.Media.insertImage(
+//            context.contentResolver,
+//            BitmapFactory.decodeResource(context.resources, R.drawable.lbxx),
+//            "hello_dep",
+//            "i am a test"
+//        )
 
-        lclog("${File.pathSeparator}")
-        lclog("${File.separator}")
+//        lclog("${File.pathSeparator}")
+//        lclog("${File.separator}")
 
         var file = File(context.externalCacheDir, "lbxxx.gif")
         FileIOUtils.writeFileFromIS(
             file,
             context.assets.open("lbxx.gif")
         )
-        var insertImage = SavaBlumUtils.insertImage(
-            context.contentResolver,
+        SavaBlumUtils.insertImage(
+            context,
             file.absolutePath,
             "self_save",
-            "image/gif", "testlc"
+            "image/gif"
         )
-
-        lclog("insertImage ->   $insertImage")
-        lclog("insertImage ->   ${UriUtils.uri2File(Uri.parse(insertImage)).absolutePath}")
         queryAll(context)
     }
 
