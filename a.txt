@@ -1,0 +1,2303 @@
+
+> Configure project :
+Repository https://dl.google.com/dl/android/maven2/ replaced by https://maven.aliyun.com/repository/google/.
+Repository https://jcenter.bintray.com/ replaced by https://maven.aliyun.com/repository/jcenter/.
+Repository https://dl.google.com/dl/android/maven2/ replaced by https://maven.aliyun.com/repository/google/.
+Repository https://jcenter.bintray.com/ replaced by https://maven.aliyun.com/repository/jcenter/.
+Repository https://dl.google.com/dl/android/maven2/ replaced by https://maven.aliyun.com/repository/google/.
+Repository https://jcenter.bintray.com/ replaced by https://maven.aliyun.com/repository/jcenter/.
+Repository https://dl.google.com/dl/android/maven2/ replaced by https://maven.aliyun.com/repository/google/.
+Repository https://jcenter.bintray.com/ replaced by https://maven.aliyun.com/repository/jcenter/.
+
+> Configure project :app
+WARNING: DSL element 'android.viewBinding.enabled' is obsolete and has been replaced with 'android.buildFeatures.viewBinding'.
+It will be removed in version 5.0 of the Android Gradle plugin.
+=======
+[task ':hi-ui:preBuild', task ':hi-ui:preDebugBuild', task ':hi-ui:compileDebugAidl', task ':hi-ui:mergeDebugJniLibFolders', task ':hi-ui:mergeDebugNativeLibs', task ':hi-ui:stripDebugDebugSymbols', task ':hi-ui:copyDebugJniLibsProjectAndLocalJars', task ':hi-ui:compileDebugRenderscript', task ':hi-ui:generateDebugBuildConfig', task ':hi-ui:generateDebugResValues', task ':hi-ui:generateDebugResources', task ':hi-ui:packageDebugResources', task ':hi-ui:parseDebugLocalResources', task ':hi-ui:processDebugManifest', task ':hi-ui:generateDebugRFile', task ':hi-ui:compileDebugKotlin', task ':hi-ui:javaPreCompileDebug', task ':hi-ui:compileDebugJavaWithJavac', task ':hi-ui:extractDebugAnnotations', task ':hi-ui:mergeDebugGeneratedProguardFiles', task ':hi-ui:mergeDebugConsumerProguardFiles', task ':hi-ui:mergeDebugShaders', task ':hi-ui:compileDebugShaders', task ':hi-ui:generateDebugAssets', task ':hi-ui:packageDebugAssets', task ':hi-ui:packageDebugRenderscript', task ':hi-ui:prepareLintJarForPublish', task ':hi-ui:processDebugJavaRes', task ':hi-ui:mergeDebugJavaResource', task ':hi-ui:syncDebugLibJars', task ':hi-ui:writeDebugAarMetadata', task ':hi-ui:bundleDebugAar', task ':hi-ui:generateMetadataFileForDebugPublication', task ':hi-ui:generatePomFileForDebugPublication', task ':hi-ui:publishDebugPublicationToMavenRepository', task ':hi-ui:preReleaseBuild', task ':hi-ui:compileReleaseAidl', task ':hi-ui:mergeReleaseJniLibFolders', task ':hi-ui:mergeReleaseNativeLibs', task ':hi-ui:stripReleaseDebugSymbols', task ':hi-ui:copyReleaseJniLibsProjectAndLocalJars', task ':hi-ui:compileReleaseRenderscript', task ':hi-ui:generateReleaseBuildConfig', task ':hi-ui:generateReleaseResValues', task ':hi-ui:generateReleaseResources', task ':hi-ui:packageReleaseResources', task ':hi-ui:parseReleaseLocalResources', task ':hi-ui:processReleaseManifest', task ':hi-ui:generateReleaseRFile', task ':hi-ui:compileReleaseKotlin', task ':hi-ui:javaPreCompileRelease', task ':hi-ui:compileReleaseJavaWithJavac', task ':hi-ui:extractReleaseAnnotations', task ':hi-ui:mergeReleaseGeneratedProguardFiles', task ':hi-ui:mergeReleaseConsumerProguardFiles', task ':hi-ui:mergeReleaseShaders', task ':hi-ui:compileReleaseShaders', task ':hi-ui:generateReleaseAssets', task ':hi-ui:packageReleaseAssets', task ':hi-ui:packageReleaseRenderscript', task ':hi-ui:processReleaseJavaRes', task ':hi-ui:mergeReleaseJavaResource', task ':hi-ui:syncReleaseLibJars', task ':hi-ui:writeReleaseAarMetadata', task ':hi-ui:bundleReleaseAar', task ':hi-ui:generateMetadataFileForReleasePublication', task ':hi-ui:generatePomFileForReleasePublication', task ':hi-ui:publishReleasePublicationToMavenRepository', task ':hi-ui:publish', task ':hi-ui:taskTree']
+
+> Task :hi-ui:preBuild SKIPPED
+> Task :hi-ui:preDebugBuild SKIPPED
+> Task :hi-ui:compileDebugAidl SKIPPED
+> Task :hi-ui:mergeDebugJniLibFolders SKIPPED
+> Task :hi-ui:mergeDebugNativeLibs SKIPPED
+> Task :hi-ui:stripDebugDebugSymbols SKIPPED
+> Task :hi-ui:copyDebugJniLibsProjectAndLocalJars SKIPPED
+> Task :hi-ui:compileDebugRenderscript SKIPPED
+> Task :hi-ui:generateDebugBuildConfig SKIPPED
+> Task :hi-ui:generateDebugResValues SKIPPED
+> Task :hi-ui:generateDebugResources SKIPPED
+> Task :hi-ui:packageDebugResources SKIPPED
+> Task :hi-ui:parseDebugLocalResources SKIPPED
+> Task :hi-ui:processDebugManifest SKIPPED
+> Task :hi-ui:generateDebugRFile SKIPPED
+> Task :hi-ui:compileDebugKotlin SKIPPED
+> Task :hi-ui:javaPreCompileDebug SKIPPED
+> Task :hi-ui:compileDebugJavaWithJavac SKIPPED
+> Task :hi-ui:extractDebugAnnotations SKIPPED
+> Task :hi-ui:mergeDebugGeneratedProguardFiles SKIPPED
+> Task :hi-ui:mergeDebugConsumerProguardFiles SKIPPED
+> Task :hi-ui:mergeDebugShaders SKIPPED
+> Task :hi-ui:compileDebugShaders SKIPPED
+> Task :hi-ui:generateDebugAssets SKIPPED
+> Task :hi-ui:packageDebugAssets SKIPPED
+> Task :hi-ui:packageDebugRenderscript SKIPPED
+> Task :hi-ui:prepareLintJarForPublish SKIPPED
+> Task :hi-ui:processDebugJavaRes SKIPPED
+> Task :hi-ui:mergeDebugJavaResource SKIPPED
+> Task :hi-ui:syncDebugLibJars SKIPPED
+> Task :hi-ui:writeDebugAarMetadata SKIPPED
+> Task :hi-ui:bundleDebugAar SKIPPED
+> Task :hi-ui:generateMetadataFileForDebugPublication SKIPPED
+> Task :hi-ui:generatePomFileForDebugPublication SKIPPED
+> Task :hi-ui:publishDebugPublicationToMavenRepository SKIPPED
+> Task :hi-ui:preReleaseBuild SKIPPED
+> Task :hi-ui:compileReleaseAidl SKIPPED
+> Task :hi-ui:mergeReleaseJniLibFolders SKIPPED
+> Task :hi-ui:mergeReleaseNativeLibs SKIPPED
+> Task :hi-ui:stripReleaseDebugSymbols SKIPPED
+> Task :hi-ui:copyReleaseJniLibsProjectAndLocalJars SKIPPED
+> Task :hi-ui:compileReleaseRenderscript SKIPPED
+> Task :hi-ui:generateReleaseBuildConfig SKIPPED
+> Task :hi-ui:generateReleaseResValues SKIPPED
+> Task :hi-ui:generateReleaseResources SKIPPED
+> Task :hi-ui:packageReleaseResources SKIPPED
+> Task :hi-ui:parseReleaseLocalResources SKIPPED
+> Task :hi-ui:processReleaseManifest SKIPPED
+> Task :hi-ui:generateReleaseRFile SKIPPED
+> Task :hi-ui:compileReleaseKotlin SKIPPED
+> Task :hi-ui:javaPreCompileRelease SKIPPED
+> Task :hi-ui:compileReleaseJavaWithJavac SKIPPED
+> Task :hi-ui:extractReleaseAnnotations SKIPPED
+> Task :hi-ui:mergeReleaseGeneratedProguardFiles SKIPPED
+> Task :hi-ui:mergeReleaseConsumerProguardFiles SKIPPED
+> Task :hi-ui:mergeReleaseShaders SKIPPED
+> Task :hi-ui:compileReleaseShaders SKIPPED
+> Task :hi-ui:generateReleaseAssets SKIPPED
+> Task :hi-ui:packageReleaseAssets SKIPPED
+> Task :hi-ui:packageReleaseRenderscript SKIPPED
+> Task :hi-ui:processReleaseJavaRes SKIPPED
+> Task :hi-ui:mergeReleaseJavaResource SKIPPED
+> Task :hi-ui:syncReleaseLibJars SKIPPED
+> Task :hi-ui:writeReleaseAarMetadata SKIPPED
+> Task :hi-ui:bundleReleaseAar SKIPPED
+> Task :hi-ui:generateMetadataFileForReleasePublication SKIPPED
+> Task :hi-ui:generatePomFileForReleasePublication SKIPPED
+> Task :hi-ui:publishReleasePublicationToMavenRepository SKIPPED
+> Task :hi-ui:publish SKIPPED
+
+> Task :hi-ui:taskTree
+
+------------------------------------------------------------
+Project :hi-ui
+------------------------------------------------------------
+
+:hi-ui:publish
++--- :hi-ui:publishDebugPublicationToMavenRepository
+|    +--- :hi-ui:bundleDebugAar
+|    |    +--- :hi-ui:compileDebugAidl
+|    |    |    \--- :hi-ui:preDebugBuild
+|    |    |         \--- :hi-ui:preBuild
+|    |    +--- :hi-ui:copyDebugJniLibsProjectAndLocalJars
+|    |    |    +--- :hi-ui:preDebugBuild
+|    |    |    |    \--- :hi-ui:preBuild
+|    |    |    \--- :hi-ui:stripDebugDebugSymbols
+|    |    |         +--- :hi-ui:mergeDebugNativeLibs
+|    |    |         |    +--- :hi-ui:mergeDebugJniLibFolders
+|    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |    |         |    |         \--- :hi-ui:preBuild
+|    |    |         |    \--- :hi-ui:preDebugBuild
+|    |    |         |         \--- :hi-ui:preBuild
+|    |    |         \--- :hi-ui:preDebugBuild
+|    |    |              \--- :hi-ui:preBuild
+|    |    +--- :hi-ui:extractDebugAnnotations
+|    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         \--- :hi-ui:preBuild
+|    |    |    +--- :hi-ui:compileDebugJavaWithJavac
+|    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:compileDebugKotlin
+|    |    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:generateDebugRFile
+|    |    |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |         \--- :hi-ui:preBuild
+|    |    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |         \--- :hi-ui:preBuild
+|    |    |    |    |         +--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    \--- :hi-ui:preBuild
+|    |    |    |    |         \--- :hi-ui:processDebugManifest
+|    |    |    |    |              \--- :hi-ui:preDebugBuild
+|    |    |    |    |                   \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:generateDebugRFile
+|    |    |    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |    |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:processDebugManifest
+|    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:javaPreCompileDebug
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         \--- :hi-ui:preBuild
+|    |    |    +--- :hi-ui:compileDebugKotlin
+|    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    \--- :hi-ui:generateDebugRFile
+|    |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         |    |         \--- :hi-ui:preBuild
+|    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |    |    |         |         \--- :hi-ui:preBuild
+|    |    |    |         +--- :hi-ui:preDebugBuild
+|    |    |    |         |    \--- :hi-ui:preBuild
+|    |    |    |         \--- :hi-ui:processDebugManifest
+|    |    |    |              \--- :hi-ui:preDebugBuild
+|    |    |    |                   \--- :hi-ui:preBuild
+|    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         \--- :hi-ui:preBuild
+|    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         \--- :hi-ui:preBuild
+|    |    |    +--- :hi-ui:generateDebugRFile
+|    |    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:preDebugBuild
+|    |    |    |    |    \--- :hi-ui:preBuild
+|    |    |    |    \--- :hi-ui:processDebugManifest
+|    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |              \--- :hi-ui:preBuild
+|    |    |    \--- :hi-ui:preDebugBuild
+|    |    |         \--- :hi-ui:preBuild
+|    |    +--- :hi-ui:generateDebugRFile
+|    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         \--- :hi-ui:preBuild
+|    |    |    +--- :hi-ui:preDebugBuild
+|    |    |    |    \--- :hi-ui:preBuild
+|    |    |    \--- :hi-ui:processDebugManifest
+|    |    |         \--- :hi-ui:preDebugBuild
+|    |    |              \--- :hi-ui:preBuild
+|    |    +--- :hi-ui:mergeDebugConsumerProguardFiles
+|    |    |    +--- :hi-ui:mergeDebugGeneratedProguardFiles
+|    |    |    |    +--- :hi-ui:compileDebugJavaWithJavac
+|    |    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:compileDebugKotlin
+|    |    |    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    \--- :hi-ui:generateDebugRFile
+|    |    |    |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         |         \--- :hi-ui:preBuild
+|    |    |    |    |    |         +--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         |    \--- :hi-ui:preBuild
+|    |    |    |    |    |         \--- :hi-ui:processDebugManifest
+|    |    |    |    |    |              \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |                   \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:generateDebugRFile
+|    |    |    |    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |    |    |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    +--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    \--- :hi-ui:preBuild
+|    |    |    |    |    |    \--- :hi-ui:processDebugManifest
+|    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:javaPreCompileDebug
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:compileDebugKotlin
+|    |    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:generateDebugRFile
+|    |    |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |         \--- :hi-ui:preBuild
+|    |    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |         \--- :hi-ui:preBuild
+|    |    |    |    |         +--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    \--- :hi-ui:preBuild
+|    |    |    |    |         \--- :hi-ui:processDebugManifest
+|    |    |    |    |              \--- :hi-ui:preDebugBuild
+|    |    |    |    |                   \--- :hi-ui:preBuild
+|    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         \--- :hi-ui:preBuild
+|    |    |    \--- :hi-ui:preDebugBuild
+|    |    |         \--- :hi-ui:preBuild
+|    |    +--- :hi-ui:packageDebugAssets
+|    |    |    +--- :hi-ui:compileDebugShaders
+|    |    |    |    +--- :hi-ui:mergeDebugShaders
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         \--- :hi-ui:preBuild
+|    |    |    +--- :hi-ui:generateDebugAssets
+|    |    |    |    \--- :hi-ui:compileDebugShaders
+|    |    |    |         +--- :hi-ui:mergeDebugShaders
+|    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |    |    |         |         \--- :hi-ui:preBuild
+|    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |              \--- :hi-ui:preBuild
+|    |    |    \--- :hi-ui:preDebugBuild
+|    |    |         \--- :hi-ui:preBuild
+|    |    +--- :hi-ui:packageDebugRenderscript
+|    |    |    \--- :hi-ui:preDebugBuild
+|    |    |         \--- :hi-ui:preBuild
+|    |    +--- :hi-ui:packageDebugResources
+|    |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |              \--- :hi-ui:preBuild
+|    |    |    \--- :hi-ui:preDebugBuild
+|    |    |         \--- :hi-ui:preBuild
+|    |    +--- :hi-ui:preDebugBuild
+|    |    |    \--- :hi-ui:preBuild
+|    |    +--- :hi-ui:prepareLintJarForPublish
+|    |    +--- :hi-ui:processDebugManifest
+|    |    |    \--- :hi-ui:preDebugBuild
+|    |    |         \--- :hi-ui:preBuild
+|    |    +--- :hi-ui:syncDebugLibJars
+|    |    |    +--- :hi-ui:compileDebugJavaWithJavac
+|    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:compileDebugKotlin
+|    |    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:generateDebugRFile
+|    |    |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |         \--- :hi-ui:preBuild
+|    |    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |         \--- :hi-ui:preBuild
+|    |    |    |    |         +--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    \--- :hi-ui:preBuild
+|    |    |    |    |         \--- :hi-ui:processDebugManifest
+|    |    |    |    |              \--- :hi-ui:preDebugBuild
+|    |    |    |    |                   \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:generateDebugRFile
+|    |    |    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |    |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:processDebugManifest
+|    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:javaPreCompileDebug
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         \--- :hi-ui:preBuild
+|    |    |    +--- :hi-ui:compileDebugKotlin
+|    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    \--- :hi-ui:generateDebugRFile
+|    |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         |    |         \--- :hi-ui:preBuild
+|    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |    |    |         |         \--- :hi-ui:preBuild
+|    |    |    |         +--- :hi-ui:preDebugBuild
+|    |    |    |         |    \--- :hi-ui:preBuild
+|    |    |    |         \--- :hi-ui:processDebugManifest
+|    |    |    |              \--- :hi-ui:preDebugBuild
+|    |    |    |                   \--- :hi-ui:preBuild
+|    |    |    +--- :hi-ui:extractDebugAnnotations
+|    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:compileDebugJavaWithJavac
+|    |    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:compileDebugKotlin
+|    |    |    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    \--- :hi-ui:generateDebugRFile
+|    |    |    |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         |         \--- :hi-ui:preBuild
+|    |    |    |    |    |         +--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         |    \--- :hi-ui:preBuild
+|    |    |    |    |    |         \--- :hi-ui:processDebugManifest
+|    |    |    |    |    |              \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |                   \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:generateDebugRFile
+|    |    |    |    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |    |    |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    +--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    \--- :hi-ui:preBuild
+|    |    |    |    |    |    \--- :hi-ui:processDebugManifest
+|    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:javaPreCompileDebug
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:compileDebugKotlin
+|    |    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:generateDebugRFile
+|    |    |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |         \--- :hi-ui:preBuild
+|    |    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |         \--- :hi-ui:preBuild
+|    |    |    |    |         +--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    \--- :hi-ui:preBuild
+|    |    |    |    |         \--- :hi-ui:processDebugManifest
+|    |    |    |    |              \--- :hi-ui:preDebugBuild
+|    |    |    |    |                   \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:generateDebugRFile
+|    |    |    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |    |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:preDebugBuild
+|    |    |    |    |    |    \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:processDebugManifest
+|    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |         \--- :hi-ui:preBuild
+|    |    |    +--- :hi-ui:mergeDebugJavaResource
+|    |    |    |    +--- :hi-ui:compileDebugKotlin
+|    |    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |    \--- :hi-ui:generateDebugRFile
+|    |    |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |    |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |    |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |    |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |    |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |    |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |    |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |    |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    |         \--- :hi-ui:preBuild
+|    |    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |    |    |    |         |         \--- :hi-ui:preBuild
+|    |    |    |    |         +--- :hi-ui:preDebugBuild
+|    |    |    |    |         |    \--- :hi-ui:preBuild
+|    |    |    |    |         \--- :hi-ui:processDebugManifest
+|    |    |    |    |              \--- :hi-ui:preDebugBuild
+|    |    |    |    |                   \--- :hi-ui:preBuild
+|    |    |    |    +--- :hi-ui:preDebugBuild
+|    |    |    |    |    \--- :hi-ui:preBuild
+|    |    |    |    \--- :hi-ui:processDebugJavaRes
+|    |    |    |         \--- :hi-ui:preDebugBuild
+|    |    |    |              \--- :hi-ui:preBuild
+|    |    |    \--- :hi-ui:preDebugBuild
+|    |    |         \--- :hi-ui:preBuild
+|    |    \--- :hi-ui:writeDebugAarMetadata
+|    |         \--- :hi-ui:preDebugBuild
+|    |              \--- :hi-ui:preBuild
+|    +--- :hi-ui:generateMetadataFileForDebugPublication
+|    |    \--- :hi-ui:bundleDebugAar
+|    |         +--- :hi-ui:compileDebugAidl
+|    |         |    \--- :hi-ui:preDebugBuild
+|    |         |         \--- :hi-ui:preBuild
+|    |         +--- :hi-ui:copyDebugJniLibsProjectAndLocalJars
+|    |         |    +--- :hi-ui:preDebugBuild
+|    |         |    |    \--- :hi-ui:preBuild
+|    |         |    \--- :hi-ui:stripDebugDebugSymbols
+|    |         |         +--- :hi-ui:mergeDebugNativeLibs
+|    |         |         |    +--- :hi-ui:mergeDebugJniLibFolders
+|    |         |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |         |    |         \--- :hi-ui:preBuild
+|    |         |         |    \--- :hi-ui:preDebugBuild
+|    |         |         |         \--- :hi-ui:preBuild
+|    |         |         \--- :hi-ui:preDebugBuild
+|    |         |              \--- :hi-ui:preBuild
+|    |         +--- :hi-ui:extractDebugAnnotations
+|    |         |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         \--- :hi-ui:preBuild
+|    |         |    +--- :hi-ui:compileDebugJavaWithJavac
+|    |         |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:compileDebugKotlin
+|    |         |    |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:generateDebugRFile
+|    |         |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |         \--- :hi-ui:preBuild
+|    |         |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |         \--- :hi-ui:preBuild
+|    |         |    |    |         +--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    \--- :hi-ui:preBuild
+|    |         |    |    |         \--- :hi-ui:processDebugManifest
+|    |         |    |    |              \--- :hi-ui:preDebugBuild
+|    |         |    |    |                   \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:generateDebugRFile
+|    |         |    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |    |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:processDebugManifest
+|    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:javaPreCompileDebug
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         \--- :hi-ui:preBuild
+|    |         |    +--- :hi-ui:compileDebugKotlin
+|    |         |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    \--- :hi-ui:generateDebugRFile
+|    |         |    |         +--- :hi-ui:parseDebugLocalResources
+|    |         |    |         |    +--- :hi-ui:packageDebugResources
+|    |         |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         |    |         \--- :hi-ui:preBuild
+|    |         |    |         |    \--- :hi-ui:preDebugBuild
+|    |         |    |         |         \--- :hi-ui:preBuild
+|    |         |    |         +--- :hi-ui:preDebugBuild
+|    |         |    |         |    \--- :hi-ui:preBuild
+|    |         |    |         \--- :hi-ui:processDebugManifest
+|    |         |    |              \--- :hi-ui:preDebugBuild
+|    |         |    |                   \--- :hi-ui:preBuild
+|    |         |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         \--- :hi-ui:preBuild
+|    |         |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         \--- :hi-ui:preBuild
+|    |         |    +--- :hi-ui:generateDebugRFile
+|    |         |    |    +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:preDebugBuild
+|    |         |    |    |    \--- :hi-ui:preBuild
+|    |         |    |    \--- :hi-ui:processDebugManifest
+|    |         |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |              \--- :hi-ui:preBuild
+|    |         |    \--- :hi-ui:preDebugBuild
+|    |         |         \--- :hi-ui:preBuild
+|    |         +--- :hi-ui:generateDebugRFile
+|    |         |    +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         \--- :hi-ui:preBuild
+|    |         |    +--- :hi-ui:preDebugBuild
+|    |         |    |    \--- :hi-ui:preBuild
+|    |         |    \--- :hi-ui:processDebugManifest
+|    |         |         \--- :hi-ui:preDebugBuild
+|    |         |              \--- :hi-ui:preBuild
+|    |         +--- :hi-ui:mergeDebugConsumerProguardFiles
+|    |         |    +--- :hi-ui:mergeDebugGeneratedProguardFiles
+|    |         |    |    +--- :hi-ui:compileDebugJavaWithJavac
+|    |         |    |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:compileDebugKotlin
+|    |         |    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    \--- :hi-ui:generateDebugRFile
+|    |         |    |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         |         \--- :hi-ui:preBuild
+|    |         |    |    |    |         +--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         |    \--- :hi-ui:preBuild
+|    |         |    |    |    |         \--- :hi-ui:processDebugManifest
+|    |         |    |    |    |              \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |                   \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:generateDebugRFile
+|    |         |    |    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |    |    |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    +--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    \--- :hi-ui:preBuild
+|    |         |    |    |    |    \--- :hi-ui:processDebugManifest
+|    |         |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:javaPreCompileDebug
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:compileDebugKotlin
+|    |         |    |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:generateDebugRFile
+|    |         |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |         \--- :hi-ui:preBuild
+|    |         |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |         \--- :hi-ui:preBuild
+|    |         |    |    |         +--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    \--- :hi-ui:preBuild
+|    |         |    |    |         \--- :hi-ui:processDebugManifest
+|    |         |    |    |              \--- :hi-ui:preDebugBuild
+|    |         |    |    |                   \--- :hi-ui:preBuild
+|    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         \--- :hi-ui:preBuild
+|    |         |    \--- :hi-ui:preDebugBuild
+|    |         |         \--- :hi-ui:preBuild
+|    |         +--- :hi-ui:packageDebugAssets
+|    |         |    +--- :hi-ui:compileDebugShaders
+|    |         |    |    +--- :hi-ui:mergeDebugShaders
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         \--- :hi-ui:preBuild
+|    |         |    +--- :hi-ui:generateDebugAssets
+|    |         |    |    \--- :hi-ui:compileDebugShaders
+|    |         |    |         +--- :hi-ui:mergeDebugShaders
+|    |         |    |         |    \--- :hi-ui:preDebugBuild
+|    |         |    |         |         \--- :hi-ui:preBuild
+|    |         |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |              \--- :hi-ui:preBuild
+|    |         |    \--- :hi-ui:preDebugBuild
+|    |         |         \--- :hi-ui:preBuild
+|    |         +--- :hi-ui:packageDebugRenderscript
+|    |         |    \--- :hi-ui:preDebugBuild
+|    |         |         \--- :hi-ui:preBuild
+|    |         +--- :hi-ui:packageDebugResources
+|    |         |    +--- :hi-ui:generateDebugResources
+|    |         |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |              \--- :hi-ui:preBuild
+|    |         |    \--- :hi-ui:preDebugBuild
+|    |         |         \--- :hi-ui:preBuild
+|    |         +--- :hi-ui:preDebugBuild
+|    |         |    \--- :hi-ui:preBuild
+|    |         +--- :hi-ui:prepareLintJarForPublish
+|    |         +--- :hi-ui:processDebugManifest
+|    |         |    \--- :hi-ui:preDebugBuild
+|    |         |         \--- :hi-ui:preBuild
+|    |         +--- :hi-ui:syncDebugLibJars
+|    |         |    +--- :hi-ui:compileDebugJavaWithJavac
+|    |         |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:compileDebugKotlin
+|    |         |    |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:generateDebugRFile
+|    |         |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |         \--- :hi-ui:preBuild
+|    |         |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |         \--- :hi-ui:preBuild
+|    |         |    |    |         +--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    \--- :hi-ui:preBuild
+|    |         |    |    |         \--- :hi-ui:processDebugManifest
+|    |         |    |    |              \--- :hi-ui:preDebugBuild
+|    |         |    |    |                   \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:generateDebugRFile
+|    |         |    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |    |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:processDebugManifest
+|    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:javaPreCompileDebug
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         \--- :hi-ui:preBuild
+|    |         |    +--- :hi-ui:compileDebugKotlin
+|    |         |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    \--- :hi-ui:generateDebugRFile
+|    |         |    |         +--- :hi-ui:parseDebugLocalResources
+|    |         |    |         |    +--- :hi-ui:packageDebugResources
+|    |         |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         |    |         \--- :hi-ui:preBuild
+|    |         |    |         |    \--- :hi-ui:preDebugBuild
+|    |         |    |         |         \--- :hi-ui:preBuild
+|    |         |    |         +--- :hi-ui:preDebugBuild
+|    |         |    |         |    \--- :hi-ui:preBuild
+|    |         |    |         \--- :hi-ui:processDebugManifest
+|    |         |    |              \--- :hi-ui:preDebugBuild
+|    |         |    |                   \--- :hi-ui:preBuild
+|    |         |    +--- :hi-ui:extractDebugAnnotations
+|    |         |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:compileDebugJavaWithJavac
+|    |         |    |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:compileDebugKotlin
+|    |         |    |    |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    \--- :hi-ui:generateDebugRFile
+|    |         |    |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         |         \--- :hi-ui:preBuild
+|    |         |    |    |    |         +--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         |    \--- :hi-ui:preBuild
+|    |         |    |    |    |         \--- :hi-ui:processDebugManifest
+|    |         |    |    |    |              \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |                   \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:generateDebugRFile
+|    |         |    |    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |    |    |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    +--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    \--- :hi-ui:preBuild
+|    |         |    |    |    |    \--- :hi-ui:processDebugManifest
+|    |         |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:javaPreCompileDebug
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:compileDebugKotlin
+|    |         |    |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:generateDebugRFile
+|    |         |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |         \--- :hi-ui:preBuild
+|    |         |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |         \--- :hi-ui:preBuild
+|    |         |    |    |         +--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    \--- :hi-ui:preBuild
+|    |         |    |    |         \--- :hi-ui:processDebugManifest
+|    |         |    |    |              \--- :hi-ui:preDebugBuild
+|    |         |    |    |                   \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:generateDebugRFile
+|    |         |    |    |    +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |    |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |    |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |    |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |    |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:preDebugBuild
+|    |         |    |    |    |    \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:processDebugManifest
+|    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |         \--- :hi-ui:preBuild
+|    |         |    +--- :hi-ui:mergeDebugJavaResource
+|    |         |    |    +--- :hi-ui:compileDebugKotlin
+|    |         |    |    |    +--- :hi-ui:compileDebugAidl
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    +--- :hi-ui:generateDebugBuildConfig
+|    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |    \--- :hi-ui:generateDebugRFile
+|    |         |    |    |         +--- :hi-ui:parseDebugLocalResources
+|    |         |    |    |         |    +--- :hi-ui:packageDebugResources
+|    |         |    |    |         |    |    +--- :hi-ui:generateDebugResources
+|    |         |    |    |         |    |    |    +--- :hi-ui:compileDebugRenderscript
+|    |         |    |    |         |    |    |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+|    |         |    |    |         |    |    |    \--- :hi-ui:generateDebugResValues
+|    |         |    |    |         |    |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |    |              \--- :hi-ui:preBuild
+|    |         |    |    |         |    |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    |         \--- :hi-ui:preBuild
+|    |         |    |    |         |    \--- :hi-ui:preDebugBuild
+|    |         |    |    |         |         \--- :hi-ui:preBuild
+|    |         |    |    |         +--- :hi-ui:preDebugBuild
+|    |         |    |    |         |    \--- :hi-ui:preBuild
+|    |         |    |    |         \--- :hi-ui:processDebugManifest
+|    |         |    |    |              \--- :hi-ui:preDebugBuild
+|    |         |    |    |                   \--- :hi-ui:preBuild
+|    |         |    |    +--- :hi-ui:preDebugBuild
+|    |         |    |    |    \--- :hi-ui:preBuild
+|    |         |    |    \--- :hi-ui:processDebugJavaRes
+|    |         |    |         \--- :hi-ui:preDebugBuild
+|    |         |    |              \--- :hi-ui:preBuild
+|    |         |    \--- :hi-ui:preDebugBuild
+|    |         |         \--- :hi-ui:preBuild
+|    |         \--- :hi-ui:writeDebugAarMetadata
+|    |              \--- :hi-ui:preDebugBuild
+|    |                   \--- :hi-ui:preBuild
+|    \--- :hi-ui:generatePomFileForDebugPublication
+\--- :hi-ui:publishReleasePublicationToMavenRepository
+     +--- :hi-ui:bundleReleaseAar
+     |    +--- :hi-ui:compileReleaseAidl
+     |    |    \--- :hi-ui:preReleaseBuild
+     |    |         \--- :hi-ui:preBuild
+     |    +--- :hi-ui:copyReleaseJniLibsProjectAndLocalJars
+     |    |    +--- :hi-ui:preReleaseBuild
+     |    |    |    \--- :hi-ui:preBuild
+     |    |    \--- :hi-ui:stripReleaseDebugSymbols
+     |    |         +--- :hi-ui:mergeReleaseNativeLibs
+     |    |         |    +--- :hi-ui:mergeReleaseJniLibFolders
+     |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |    |         |    |         \--- :hi-ui:preBuild
+     |    |         |    \--- :hi-ui:preReleaseBuild
+     |    |         |         \--- :hi-ui:preBuild
+     |    |         \--- :hi-ui:preReleaseBuild
+     |    |              \--- :hi-ui:preBuild
+     |    +--- :hi-ui:extractReleaseAnnotations
+     |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         \--- :hi-ui:preBuild
+     |    |    +--- :hi-ui:compileReleaseJavaWithJavac
+     |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:compileReleaseKotlin
+     |    |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:generateReleaseRFile
+     |    |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |         \--- :hi-ui:preBuild
+     |    |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |         \--- :hi-ui:preBuild
+     |    |    |    |         +--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    \--- :hi-ui:preBuild
+     |    |    |    |         \--- :hi-ui:processReleaseManifest
+     |    |    |    |              \--- :hi-ui:preReleaseBuild
+     |    |    |    |                   \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:generateReleaseRFile
+     |    |    |    |    +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |    |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:processReleaseManifest
+     |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:javaPreCompileRelease
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         \--- :hi-ui:preBuild
+     |    |    +--- :hi-ui:compileReleaseKotlin
+     |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    \--- :hi-ui:generateReleaseRFile
+     |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         |    |         \--- :hi-ui:preBuild
+     |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |    |    |         |         \--- :hi-ui:preBuild
+     |    |    |         +--- :hi-ui:preReleaseBuild
+     |    |    |         |    \--- :hi-ui:preBuild
+     |    |    |         \--- :hi-ui:processReleaseManifest
+     |    |    |              \--- :hi-ui:preReleaseBuild
+     |    |    |                   \--- :hi-ui:preBuild
+     |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         \--- :hi-ui:preBuild
+     |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         \--- :hi-ui:preBuild
+     |    |    +--- :hi-ui:generateReleaseRFile
+     |    |    |    +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:preReleaseBuild
+     |    |    |    |    \--- :hi-ui:preBuild
+     |    |    |    \--- :hi-ui:processReleaseManifest
+     |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |              \--- :hi-ui:preBuild
+     |    |    \--- :hi-ui:preReleaseBuild
+     |    |         \--- :hi-ui:preBuild
+     |    +--- :hi-ui:generateReleaseRFile
+     |    |    +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         \--- :hi-ui:preBuild
+     |    |    +--- :hi-ui:preReleaseBuild
+     |    |    |    \--- :hi-ui:preBuild
+     |    |    \--- :hi-ui:processReleaseManifest
+     |    |         \--- :hi-ui:preReleaseBuild
+     |    |              \--- :hi-ui:preBuild
+     |    +--- :hi-ui:mergeReleaseConsumerProguardFiles
+     |    |    +--- :hi-ui:mergeReleaseGeneratedProguardFiles
+     |    |    |    +--- :hi-ui:compileReleaseJavaWithJavac
+     |    |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:compileReleaseKotlin
+     |    |    |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    \--- :hi-ui:generateReleaseRFile
+     |    |    |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         |         \--- :hi-ui:preBuild
+     |    |    |    |    |         +--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         |    \--- :hi-ui:preBuild
+     |    |    |    |    |         \--- :hi-ui:processReleaseManifest
+     |    |    |    |    |              \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |                   \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:generateReleaseRFile
+     |    |    |    |    |    +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |    |    |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    +--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    \--- :hi-ui:preBuild
+     |    |    |    |    |    \--- :hi-ui:processReleaseManifest
+     |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:javaPreCompileRelease
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:compileReleaseKotlin
+     |    |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:generateReleaseRFile
+     |    |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |         \--- :hi-ui:preBuild
+     |    |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |         \--- :hi-ui:preBuild
+     |    |    |    |         +--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    \--- :hi-ui:preBuild
+     |    |    |    |         \--- :hi-ui:processReleaseManifest
+     |    |    |    |              \--- :hi-ui:preReleaseBuild
+     |    |    |    |                   \--- :hi-ui:preBuild
+     |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         \--- :hi-ui:preBuild
+     |    |    \--- :hi-ui:preReleaseBuild
+     |    |         \--- :hi-ui:preBuild
+     |    +--- :hi-ui:packageReleaseAssets
+     |    |    +--- :hi-ui:compileReleaseShaders
+     |    |    |    +--- :hi-ui:mergeReleaseShaders
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         \--- :hi-ui:preBuild
+     |    |    +--- :hi-ui:generateReleaseAssets
+     |    |    |    \--- :hi-ui:compileReleaseShaders
+     |    |    |         +--- :hi-ui:mergeReleaseShaders
+     |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |    |    |         |         \--- :hi-ui:preBuild
+     |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |              \--- :hi-ui:preBuild
+     |    |    \--- :hi-ui:preReleaseBuild
+     |    |         \--- :hi-ui:preBuild
+     |    +--- :hi-ui:packageReleaseRenderscript
+     |    |    \--- :hi-ui:preReleaseBuild
+     |    |         \--- :hi-ui:preBuild
+     |    +--- :hi-ui:packageReleaseResources
+     |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |              \--- :hi-ui:preBuild
+     |    |    \--- :hi-ui:preReleaseBuild
+     |    |         \--- :hi-ui:preBuild
+     |    +--- :hi-ui:preReleaseBuild
+     |    |    \--- :hi-ui:preBuild
+     |    +--- :hi-ui:prepareLintJarForPublish
+     |    +--- :hi-ui:processReleaseManifest
+     |    |    \--- :hi-ui:preReleaseBuild
+     |    |         \--- :hi-ui:preBuild
+     |    +--- :hi-ui:syncReleaseLibJars
+     |    |    +--- :hi-ui:compileReleaseJavaWithJavac
+     |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:compileReleaseKotlin
+     |    |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:generateReleaseRFile
+     |    |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |         \--- :hi-ui:preBuild
+     |    |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |         \--- :hi-ui:preBuild
+     |    |    |    |         +--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    \--- :hi-ui:preBuild
+     |    |    |    |         \--- :hi-ui:processReleaseManifest
+     |    |    |    |              \--- :hi-ui:preReleaseBuild
+     |    |    |    |                   \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:generateReleaseRFile
+     |    |    |    |    +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |    |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:processReleaseManifest
+     |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:javaPreCompileRelease
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         \--- :hi-ui:preBuild
+     |    |    +--- :hi-ui:compileReleaseKotlin
+     |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    \--- :hi-ui:generateReleaseRFile
+     |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         |    |         \--- :hi-ui:preBuild
+     |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |    |    |         |         \--- :hi-ui:preBuild
+     |    |    |         +--- :hi-ui:preReleaseBuild
+     |    |    |         |    \--- :hi-ui:preBuild
+     |    |    |         \--- :hi-ui:processReleaseManifest
+     |    |    |              \--- :hi-ui:preReleaseBuild
+     |    |    |                   \--- :hi-ui:preBuild
+     |    |    +--- :hi-ui:extractReleaseAnnotations
+     |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:compileReleaseJavaWithJavac
+     |    |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:compileReleaseKotlin
+     |    |    |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    \--- :hi-ui:generateReleaseRFile
+     |    |    |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         |         \--- :hi-ui:preBuild
+     |    |    |    |    |         +--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         |    \--- :hi-ui:preBuild
+     |    |    |    |    |         \--- :hi-ui:processReleaseManifest
+     |    |    |    |    |              \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |                   \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:generateReleaseRFile
+     |    |    |    |    |    +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |    |    |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    +--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    \--- :hi-ui:preBuild
+     |    |    |    |    |    \--- :hi-ui:processReleaseManifest
+     |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:javaPreCompileRelease
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:compileReleaseKotlin
+     |    |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:generateReleaseRFile
+     |    |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |         \--- :hi-ui:preBuild
+     |    |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |         \--- :hi-ui:preBuild
+     |    |    |    |         +--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    \--- :hi-ui:preBuild
+     |    |    |    |         \--- :hi-ui:processReleaseManifest
+     |    |    |    |              \--- :hi-ui:preReleaseBuild
+     |    |    |    |                   \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:generateReleaseRFile
+     |    |    |    |    +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |    |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:preReleaseBuild
+     |    |    |    |    |    \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:processReleaseManifest
+     |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |              \--- :hi-ui:preBuild
+     |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |         \--- :hi-ui:preBuild
+     |    |    +--- :hi-ui:mergeReleaseJavaResource
+     |    |    |    +--- :hi-ui:compileReleaseKotlin
+     |    |    |    |    +--- :hi-ui:compileReleaseAidl
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |    \--- :hi-ui:generateReleaseRFile
+     |    |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |    |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |    |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |    |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |    |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |    |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |    |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |    |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    |         \--- :hi-ui:preBuild
+     |    |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |    |    |    |         |         \--- :hi-ui:preBuild
+     |    |    |    |         +--- :hi-ui:preReleaseBuild
+     |    |    |    |         |    \--- :hi-ui:preBuild
+     |    |    |    |         \--- :hi-ui:processReleaseManifest
+     |    |    |    |              \--- :hi-ui:preReleaseBuild
+     |    |    |    |                   \--- :hi-ui:preBuild
+     |    |    |    +--- :hi-ui:preReleaseBuild
+     |    |    |    |    \--- :hi-ui:preBuild
+     |    |    |    \--- :hi-ui:processReleaseJavaRes
+     |    |    |         \--- :hi-ui:preReleaseBuild
+     |    |    |              \--- :hi-ui:preBuild
+     |    |    \--- :hi-ui:preReleaseBuild
+     |    |         \--- :hi-ui:preBuild
+     |    \--- :hi-ui:writeReleaseAarMetadata
+     |         \--- :hi-ui:preReleaseBuild
+     |              \--- :hi-ui:preBuild
+     +--- :hi-ui:generateMetadataFileForReleasePublication
+     |    \--- :hi-ui:bundleReleaseAar
+     |         +--- :hi-ui:compileReleaseAidl
+     |         |    \--- :hi-ui:preReleaseBuild
+     |         |         \--- :hi-ui:preBuild
+     |         +--- :hi-ui:copyReleaseJniLibsProjectAndLocalJars
+     |         |    +--- :hi-ui:preReleaseBuild
+     |         |    |    \--- :hi-ui:preBuild
+     |         |    \--- :hi-ui:stripReleaseDebugSymbols
+     |         |         +--- :hi-ui:mergeReleaseNativeLibs
+     |         |         |    +--- :hi-ui:mergeReleaseJniLibFolders
+     |         |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |         |    |         \--- :hi-ui:preBuild
+     |         |         |    \--- :hi-ui:preReleaseBuild
+     |         |         |         \--- :hi-ui:preBuild
+     |         |         \--- :hi-ui:preReleaseBuild
+     |         |              \--- :hi-ui:preBuild
+     |         +--- :hi-ui:extractReleaseAnnotations
+     |         |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         \--- :hi-ui:preBuild
+     |         |    +--- :hi-ui:compileReleaseJavaWithJavac
+     |         |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:compileReleaseKotlin
+     |         |    |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:generateReleaseRFile
+     |         |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |         \--- :hi-ui:preBuild
+     |         |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |         \--- :hi-ui:preBuild
+     |         |    |    |         +--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    \--- :hi-ui:preBuild
+     |         |    |    |         \--- :hi-ui:processReleaseManifest
+     |         |    |    |              \--- :hi-ui:preReleaseBuild
+     |         |    |    |                   \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:generateReleaseRFile
+     |         |    |    |    +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |    |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:processReleaseManifest
+     |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:javaPreCompileRelease
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         \--- :hi-ui:preBuild
+     |         |    +--- :hi-ui:compileReleaseKotlin
+     |         |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    \--- :hi-ui:generateReleaseRFile
+     |         |    |         +--- :hi-ui:parseReleaseLocalResources
+     |         |    |         |    +--- :hi-ui:packageReleaseResources
+     |         |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         |    |         \--- :hi-ui:preBuild
+     |         |    |         |    \--- :hi-ui:preReleaseBuild
+     |         |    |         |         \--- :hi-ui:preBuild
+     |         |    |         +--- :hi-ui:preReleaseBuild
+     |         |    |         |    \--- :hi-ui:preBuild
+     |         |    |         \--- :hi-ui:processReleaseManifest
+     |         |    |              \--- :hi-ui:preReleaseBuild
+     |         |    |                   \--- :hi-ui:preBuild
+     |         |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         \--- :hi-ui:preBuild
+     |         |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         \--- :hi-ui:preBuild
+     |         |    +--- :hi-ui:generateReleaseRFile
+     |         |    |    +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:preReleaseBuild
+     |         |    |    |    \--- :hi-ui:preBuild
+     |         |    |    \--- :hi-ui:processReleaseManifest
+     |         |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |              \--- :hi-ui:preBuild
+     |         |    \--- :hi-ui:preReleaseBuild
+     |         |         \--- :hi-ui:preBuild
+     |         +--- :hi-ui:generateReleaseRFile
+     |         |    +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         \--- :hi-ui:preBuild
+     |         |    +--- :hi-ui:preReleaseBuild
+     |         |    |    \--- :hi-ui:preBuild
+     |         |    \--- :hi-ui:processReleaseManifest
+     |         |         \--- :hi-ui:preReleaseBuild
+     |         |              \--- :hi-ui:preBuild
+     |         +--- :hi-ui:mergeReleaseConsumerProguardFiles
+     |         |    +--- :hi-ui:mergeReleaseGeneratedProguardFiles
+     |         |    |    +--- :hi-ui:compileReleaseJavaWithJavac
+     |         |    |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:compileReleaseKotlin
+     |         |    |    |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    \--- :hi-ui:generateReleaseRFile
+     |         |    |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         |         \--- :hi-ui:preBuild
+     |         |    |    |    |         +--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         |    \--- :hi-ui:preBuild
+     |         |    |    |    |         \--- :hi-ui:processReleaseManifest
+     |         |    |    |    |              \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |                   \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:generateReleaseRFile
+     |         |    |    |    |    +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |    |    |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    +--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    \--- :hi-ui:preBuild
+     |         |    |    |    |    \--- :hi-ui:processReleaseManifest
+     |         |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:javaPreCompileRelease
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:compileReleaseKotlin
+     |         |    |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:generateReleaseRFile
+     |         |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |         \--- :hi-ui:preBuild
+     |         |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |         \--- :hi-ui:preBuild
+     |         |    |    |         +--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    \--- :hi-ui:preBuild
+     |         |    |    |         \--- :hi-ui:processReleaseManifest
+     |         |    |    |              \--- :hi-ui:preReleaseBuild
+     |         |    |    |                   \--- :hi-ui:preBuild
+     |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         \--- :hi-ui:preBuild
+     |         |    \--- :hi-ui:preReleaseBuild
+     |         |         \--- :hi-ui:preBuild
+     |         +--- :hi-ui:packageReleaseAssets
+     |         |    +--- :hi-ui:compileReleaseShaders
+     |         |    |    +--- :hi-ui:mergeReleaseShaders
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         \--- :hi-ui:preBuild
+     |         |    +--- :hi-ui:generateReleaseAssets
+     |         |    |    \--- :hi-ui:compileReleaseShaders
+     |         |    |         +--- :hi-ui:mergeReleaseShaders
+     |         |    |         |    \--- :hi-ui:preReleaseBuild
+     |         |    |         |         \--- :hi-ui:preBuild
+     |         |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |              \--- :hi-ui:preBuild
+     |         |    \--- :hi-ui:preReleaseBuild
+     |         |         \--- :hi-ui:preBuild
+     |         +--- :hi-ui:packageReleaseRenderscript
+     |         |    \--- :hi-ui:preReleaseBuild
+     |         |         \--- :hi-ui:preBuild
+     |         +--- :hi-ui:packageReleaseResources
+     |         |    +--- :hi-ui:generateReleaseResources
+     |         |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |              \--- :hi-ui:preBuild
+     |         |    \--- :hi-ui:preReleaseBuild
+     |         |         \--- :hi-ui:preBuild
+     |         +--- :hi-ui:preReleaseBuild
+     |         |    \--- :hi-ui:preBuild
+     |         +--- :hi-ui:prepareLintJarForPublish
+     |         +--- :hi-ui:processReleaseManifest
+     |         |    \--- :hi-ui:preReleaseBuild
+     |         |         \--- :hi-ui:preBuild
+     |         +--- :hi-ui:syncReleaseLibJars
+     |         |    +--- :hi-ui:compileReleaseJavaWithJavac
+     |         |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:compileReleaseKotlin
+     |         |    |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:generateReleaseRFile
+     |         |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |         \--- :hi-ui:preBuild
+     |         |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |         \--- :hi-ui:preBuild
+     |         |    |    |         +--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    \--- :hi-ui:preBuild
+     |         |    |    |         \--- :hi-ui:processReleaseManifest
+     |         |    |    |              \--- :hi-ui:preReleaseBuild
+     |         |    |    |                   \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:generateReleaseRFile
+     |         |    |    |    +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |    |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:processReleaseManifest
+     |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:javaPreCompileRelease
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         \--- :hi-ui:preBuild
+     |         |    +--- :hi-ui:compileReleaseKotlin
+     |         |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    \--- :hi-ui:generateReleaseRFile
+     |         |    |         +--- :hi-ui:parseReleaseLocalResources
+     |         |    |         |    +--- :hi-ui:packageReleaseResources
+     |         |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         |    |         \--- :hi-ui:preBuild
+     |         |    |         |    \--- :hi-ui:preReleaseBuild
+     |         |    |         |         \--- :hi-ui:preBuild
+     |         |    |         +--- :hi-ui:preReleaseBuild
+     |         |    |         |    \--- :hi-ui:preBuild
+     |         |    |         \--- :hi-ui:processReleaseManifest
+     |         |    |              \--- :hi-ui:preReleaseBuild
+     |         |    |                   \--- :hi-ui:preBuild
+     |         |    +--- :hi-ui:extractReleaseAnnotations
+     |         |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:compileReleaseJavaWithJavac
+     |         |    |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:compileReleaseKotlin
+     |         |    |    |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    \--- :hi-ui:generateReleaseRFile
+     |         |    |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         |         \--- :hi-ui:preBuild
+     |         |    |    |    |         +--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         |    \--- :hi-ui:preBuild
+     |         |    |    |    |         \--- :hi-ui:processReleaseManifest
+     |         |    |    |    |              \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |                   \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:generateReleaseRFile
+     |         |    |    |    |    +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |    |    |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    +--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    \--- :hi-ui:preBuild
+     |         |    |    |    |    \--- :hi-ui:processReleaseManifest
+     |         |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:javaPreCompileRelease
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:compileReleaseKotlin
+     |         |    |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:generateReleaseRFile
+     |         |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |         \--- :hi-ui:preBuild
+     |         |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |         \--- :hi-ui:preBuild
+     |         |    |    |         +--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    \--- :hi-ui:preBuild
+     |         |    |    |         \--- :hi-ui:processReleaseManifest
+     |         |    |    |              \--- :hi-ui:preReleaseBuild
+     |         |    |    |                   \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:generateReleaseRFile
+     |         |    |    |    +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |    |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |    |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |    |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |    |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:preReleaseBuild
+     |         |    |    |    |    \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:processReleaseManifest
+     |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |         \--- :hi-ui:preBuild
+     |         |    +--- :hi-ui:mergeReleaseJavaResource
+     |         |    |    +--- :hi-ui:compileReleaseKotlin
+     |         |    |    |    +--- :hi-ui:compileReleaseAidl
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    +--- :hi-ui:generateReleaseBuildConfig
+     |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |    \--- :hi-ui:generateReleaseRFile
+     |         |    |    |         +--- :hi-ui:parseReleaseLocalResources
+     |         |    |    |         |    +--- :hi-ui:packageReleaseResources
+     |         |    |    |         |    |    +--- :hi-ui:generateReleaseResources
+     |         |    |    |         |    |    |    +--- :hi-ui:compileReleaseRenderscript
+     |         |    |    |         |    |    |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |    |    |         \--- :hi-ui:preBuild
+     |         |    |    |         |    |    |    \--- :hi-ui:generateReleaseResValues
+     |         |    |    |         |    |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |    |              \--- :hi-ui:preBuild
+     |         |    |    |         |    |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    |         \--- :hi-ui:preBuild
+     |         |    |    |         |    \--- :hi-ui:preReleaseBuild
+     |         |    |    |         |         \--- :hi-ui:preBuild
+     |         |    |    |         +--- :hi-ui:preReleaseBuild
+     |         |    |    |         |    \--- :hi-ui:preBuild
+     |         |    |    |         \--- :hi-ui:processReleaseManifest
+     |         |    |    |              \--- :hi-ui:preReleaseBuild
+     |         |    |    |                   \--- :hi-ui:preBuild
+     |         |    |    +--- :hi-ui:preReleaseBuild
+     |         |    |    |    \--- :hi-ui:preBuild
+     |         |    |    \--- :hi-ui:processReleaseJavaRes
+     |         |    |         \--- :hi-ui:preReleaseBuild
+     |         |    |              \--- :hi-ui:preBuild
+     |         |    \--- :hi-ui:preReleaseBuild
+     |         |         \--- :hi-ui:preBuild
+     |         \--- :hi-ui:writeReleaseAarMetadata
+     |              \--- :hi-ui:preReleaseBuild
+     |                   \--- :hi-ui:preBuild
+     \--- :hi-ui:generatePomFileForReleasePublication
+
+
+To see task dependency tree for a specific task, run gradlew <project-path>:<task> <project-path>:taskTree [--no-repeat] [--task-depth <depth>]
+Executions of all tasks except for taskTree will be skipped. They will be used for building the task graph only.
+
+Add --no-repeat to prevent printing a subtree of the same task more than once.
+
+For example, try running gradlew :hi-ui:build :hi-ui:taskTree
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 7s
+1 actionable task: 1 executed
