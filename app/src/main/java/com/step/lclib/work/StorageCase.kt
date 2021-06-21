@@ -24,29 +24,38 @@ import java.io.FileOutputStream
 // https://www.jianshu.com/p/d5573e312bb8
 object StorageCase {
 
-    fun insertDept(context: Activity) {
-//        var insertImage = MediaStore.Images.Media.insertImage(
-//            context.contentResolver,
-//            BitmapFactory.decodeResource(context.resources, R.drawable.lbxx),
-//            "hello_dep",
-//            "i am a test"
-//        )
+    fun insert2(context: Activity) {
+
+        MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL)
+//        SavaBlumUtils.mediaScan()
+    }
 
 //        lclog("${File.pathSeparator}")
 //        lclog("${File.separator}")
 
-        var file = File(context.externalCacheDir, "lbxxx.gif")
-        FileIOUtils.writeFileFromIS(
-            file,
-            context.assets.open("lbxx.gif")
+    fun insertDept(context: Activity) {
+        lclog("是否有存储权限16 ${ActivityCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED}")
+
+        var insertImage = MediaStore.Images.Media.insertImage(
+            context.contentResolver,
+            BitmapFactory.decodeResource(context.resources, R.drawable.lbxx),
+            "hello_${System.currentTimeMillis()}",
+            "i am a test"
         )
-        SavaBlumUtils.insertImage(
-            context,
-            file.absolutePath,
-            "self_save",
-            "image/gif"
-        )
-        queryAll(context)
+
+
+//        var file = File(context.externalCacheDir, "dinosaur_${System.currentTimeMillis()}.png")
+//        FileIOUtils.writeFileFromIS(
+//            file,
+//            context.assets.open("dinosaur.png")
+//        )
+//        SavaBlumUtils.insertImage(
+//            context,
+//            file.absolutePath,
+//            "self_save_${System.currentTimeMillis()}.png",
+//            "image/png"
+//        )
+//        queryAll(context)
     }
 
     fun queryAll(context: Activity) {
