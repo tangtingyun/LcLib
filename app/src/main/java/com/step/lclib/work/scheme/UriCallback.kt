@@ -3,6 +3,6 @@ package com.step.lclib.work.scheme
 
 interface UriCallback {
 
-    fun onNext()
+    fun onNext(uriRequest: UriRequest)
 
 }

@@ -8,9 +8,19 @@ import com.step.lclib.work.AppGlobals
 import java.util.*
 
 class UriRequest {
-    val uri: String = "";
-    val context: Context = AppGlobals.getApplication();
+
+    var uri: String = "";
+    var context: Context = AppGlobals.getApplication();
     val mExtras: ArrayMap<String, Any?> = ArrayMap()
+
+    constructor(uri: String) {
+        this.uri = uri
+    }
+
+    constructor(uri: String, context: Context) {
+        this.uri = uri
+        this.context = context
+    }
 
 
     fun parseUriSafely(uri: String?): Uri {
@@ -56,6 +66,11 @@ class UriRequest {
 
     fun getStringField(key: String, defaultValue: String = ""): String {
         return getField(key, defaultValue)
+    }
+
+
+    fun start() {
+        SchemeDispatch.openUri(this)
     }
 
 
