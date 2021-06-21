@@ -21,6 +21,7 @@ import java.io.FileInputStream
 //https://developer.android.google.cn/training/data-storage/shared/media
 //https://ppting.me/2020/04/19/2020_04_19_how_to_use_Android_MediaStore_Api/
 //https://www.hurryyu.com/2020/04/17/%E8%BD%BB%E6%9D%BE%E9%80%82%E9%85%8DAndroid%2010%20Scoped%20Storage%20%E5%88%86%E5%8C%BA%E5%AD%98%E5%82%A8%20-%20%E5%8D%9A%E5%AE%A2%E7%89%88/#%E9%97%AE%E9%A2%98%E5%9B%9B%E3%80%81%E7%9C%9F%E7%9A%84%E4%B8%8D%E8%83%BD%E5%9C%A8%E5%A4%96%E9%83%A8%E5%AD%98%E5%82%A8%E6%92%92%E9%87%8E%E4%BA%86%EF%BC%9F%E6%88%91%E4%B8%8D%E4%BF%A1
+//https://juejin.cn/post/6850418121724051470
 object SavaBlumUtils {
 
 
