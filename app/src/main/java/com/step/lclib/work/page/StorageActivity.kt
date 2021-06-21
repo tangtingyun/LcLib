@@ -31,7 +31,8 @@ class StorageActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btn_storage).setOnClickListener {
 //            StorageCase.test(this)
-            StorageCase.insertDept(this)
+//            StorageCase.insertDept(this)
+            StorageCase.insert2(this)
         }
     }
 

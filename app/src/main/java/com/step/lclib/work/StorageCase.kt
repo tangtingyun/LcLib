@@ -13,10 +13,9 @@ import android.os.Build
 import android.os.Environment
 import android.provider.MediaStore
 import androidx.core.app.ActivityCompat
-import com.blankj.utilcode.util.FileIOUtils
-import com.blankj.utilcode.util.UriUtils
 import com.step.lclib.R
 import com.step.lclib.work.utils.SavaBlumUtils
+import com.step.lclib.work.utils.copy
 import java.io.File
 import java.io.FileOutputStream
 
@@ -26,15 +25,27 @@ object StorageCase {
 
     fun insert2(context: Activity) {
 
-        MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL)
-//        SavaBlumUtils.mediaScan()
+        val destDir: File = context.externalCacheDir!!
+        val imageDest = File(destDir, System.currentTimeMillis().toString() + ".png")
+        copy(FileOutputStream(imageDest), context.assets.open("dinosaur.png"))
+        SavaBlumUtils.mediaScan(
+            context,
+            Uri.fromFile(imageDest)
+        )
     }
 
 //        lclog("${File.pathSeparator}")
 //        lclog("${File.separator}")
 
     fun insertDept(context: Activity) {
-        lclog("是否有存储权限16 ${ActivityCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED}")
+        lclog(
+            "是否有存储权限16 ${
+                ActivityCompat.checkSelfPermission(
+                    context,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE
+                ) == PackageManager.PERMISSION_GRANTED
+            }"
+        )
 
         var insertImage = MediaStore.Images.Media.insertImage(
             context.contentResolver,
