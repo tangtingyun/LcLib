@@ -118,6 +118,10 @@ dependencies {
 
     implementation 'com.blankj:utilcode:1.30.6'
 
+    implementation 'com.tinder.statemachine:statemachine:0.2.0'
+    // https://juejin.cn/post/6895299152226615309#heading-30
+
+
 }
 
 
