@@ -31,6 +31,8 @@ object SavaBlumUtils {
     fun mediaScan(context: Context?, uri: Uri?) {
         if (context != null) {
             val intent = Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE)
+            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+            intent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
             intent.data = uri
             context.sendBroadcast(intent)
         }

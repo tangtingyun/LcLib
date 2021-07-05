@@ -22,7 +22,7 @@ fun File.ensureDir(): Boolean {
             return mkdirs()
         }
     } catch (e: Exception) {
-        Log.w(TAG, e.message)
+        Log.w(TAG, e.message ?: "not msg")
     }
     return false
 }

@@ -23,15 +23,53 @@ import java.io.FileOutputStream
 // https://www.jianshu.com/p/d5573e312bb8
 object StorageCase {
 
+    // https://juejin.cn/post/6928316848345710599
+    fun testAndroidQ(context: Activity) {
+        lclog(
+            "是否有存储权限18 ${
+                ActivityCompat.checkSelfPermission(
+                    context,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE
+                ) == PackageManager.PERMISSION_GRANTED
+            }"
+        )
+        val destDir: File =
+//            context.getExternalFilesDir(Environment.DIRECTORY_PICTURES)!!
+            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
+        if (!destDir.exists()) {
+            destDir.mkdirs()
+        }
+        var file = File(destDir, "android_q")
+        if (!file.exists()) {
+            file.mkdirs()
+        }
+        copy(FileOutputStream(File(file, "sss.png")), context.assets.open("dinosaur.png"))
+    }
+
     fun insert2(context: Activity) {
 
-        val destDir: File = context.externalCacheDir!!
-        val imageDest = File(destDir, System.currentTimeMillis().toString() + ".png")
+        // /storage/emulated/0/Android/data/com.step.lclib/files/Pictures/1624529331984cece.png
+//        val destDir: File = context.getExternalFilesDir(Environment.DIRECTORY_PICTURES)!!
+
+        // /storage/emulated/0/Pictures/1624529444813cece.png
+        val destDir: File =
+            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
+        val imageDest = File(destDir, System.currentTimeMillis().toString() + "cece" + ".png")
         copy(FileOutputStream(imageDest), context.assets.open("dinosaur.png"))
-        SavaBlumUtils.mediaScan(
-            context,
-            Uri.fromFile(imageDest)
-        )
+        lclog("imageDest.absolutePath ->    ${imageDest.absolutePath}")
+        lclog("imageDest.path ->    ${imageDest.path}")
+        MediaScannerConnection.scanFile(
+            context, arrayOf(imageDest.absolutePath), null
+        ) { path, uri ->
+            lclog("path ->    ${path}")
+            lclog("uri ->    ${uri}")
+        }
+//        var scanUri = ExportProvider.file2uri(context, imageDest)
+//        lclog("scanUri ->    ${scanUri}")
+//        SavaBlumUtils.mediaScan(
+//            context,
+//            scanUri
+//        )
     }
 
 //        lclog("${File.pathSeparator}")
@@ -305,4 +343,18 @@ object StorageCase {
             "${Environment.DIRECTORY_PICTURES}/$APP_FOLDER_NAME/"
         }
     }
+
+
+    var dotMap = mutableMapOf<String, String>(
+        "a" to "ab"
+    )
+
+    fun reverseMap() {
+
+        val swapDotMap = mutableMapOf<String, String>()
+
+        dotMap.toMutableMap().onEach { };
+    }
+
+
 }
