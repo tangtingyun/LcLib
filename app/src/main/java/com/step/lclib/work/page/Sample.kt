@@ -8,8 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import com.step.lclib.R
 import com.step.lclib.work.lclog
-import cn.eclicks.drivingtest.utils.DtHelper
-import java.nio.charset.Charset
 import java.util.*
 
 class Sample : AppCompatActivity() {
@@ -68,7 +66,6 @@ class Sample : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
-        lclog("current year ->  ${getCurrentDayOfYear()}")
     }
 
     //获取指定时间的一年中的第几天

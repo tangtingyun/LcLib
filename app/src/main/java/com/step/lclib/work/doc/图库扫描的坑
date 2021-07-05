@@ -1,0 +1,6 @@
+https://developer.android.google.cn/training/camera/photobasics.html#TaskGallery
+官方文档说了
+如果您将照片保存到 getExternalFilesDir() 提供的目录中，媒体扫描器将无法访问相应的文件，因为这些文件对您的应用保持私密状态。
+
+
+http://liwenkun.me/2017/02/24/android-dev-log/

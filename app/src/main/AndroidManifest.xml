@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".work.jetpack.JetpackActivity"></activity>
+        <activity android:name=".work.bestpractice.MainActivity"></activity>
+        <activity android:name=".work.page.MediaActivity" />
+        <activity android:name=".work.jetpack.JetpackActivity" />
         <activity android:name=".work.exo.ExoActivity" />
         <activity android:name=".work.page.WindowManagerAct" />
         <activity android:name=".work.page.StorageActivity" />
@@ -37,7 +39,7 @@
             android:process=":remote" />
 
         <provider
-            android:name="com.step.lclib.work.ExportProvider"
+            android:name=".work.ExportProvider"
             android:authorities="${applicationId}.work.ExportProvider"
             android:exported="false"
             android:grantUriPermissions="true">
