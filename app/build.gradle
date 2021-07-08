@@ -124,6 +124,9 @@ dependencies {
     // https://juejin.cn/post/6895299152226615309#heading-30
 
 
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+
+
 }
 
 
