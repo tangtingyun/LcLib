@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/iv_recycler_string"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/lbxx"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_recycler_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_recycler_string"
+        app:layout_constraintLeft_toRightOf="@id/iv_recycler_string"
+        app:layout_constraintTop_toTopOf="@id/iv_recycler_string" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
