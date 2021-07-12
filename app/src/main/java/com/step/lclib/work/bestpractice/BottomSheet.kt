@@ -13,6 +13,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.step.lclib.R
+import com.step.lclib.work.lclog
 
 
 //  https://www.jianshu.com/p/04711494868e
@@ -23,6 +24,10 @@ import com.step.lclib.R
 
 
 class BottomSheet : BottomSheetDialogFragment() {
+
+    init {
+        lclog("是否重建???  ")
+    }
 
 
     lateinit var a: BottomSheetDialog;
@@ -59,12 +64,12 @@ class BottomSheet : BottomSheetDialogFragment() {
         mRecyBottom?.layoutManager = LinearLayoutManager(context)
         mRecyBottom?.adapter = TextAdapter()
 
-        getBehavior()?.isFitToContents = false
+     /*   getBehavior()?.isFitToContents = false
         getBehavior()?.expandedOffset =
             TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_DIP,
                 100f, resources.displayMetrics
-            ).toInt()
+            ).toInt()*/
 
 
 //        getBehavior()?.peekHeight = TypedValue.applyDimension(
