@@ -11,11 +11,13 @@ import android.widget.VideoView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSmoothScroller
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
 import com.step.lclib.R
 import com.step.lclib.databinding.ActivityRecyclerViewBinding
 import com.step.lclib.work.utils.GlideApp
+
 
 //https://www.jianshu.com/p/b343fcff51b0
 // https://www.youtube.com/watch?v=GvLgWjPigmQ
@@ -77,7 +79,7 @@ class StringAdapter(
             mTvString.context;
 
             mTvString.text = item
-            glide.load(R.drawable.lbxx).into(mIvIcon)
+//            glide.load(R.drawable.lbxx).into(mIvIcon)
         }
     }
 }
@@ -97,15 +99,12 @@ class RecyclerViewActivity : AppCompatActivity() {
         binding = ActivityRecyclerViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val dataList = mutableListOf<String>()
 
-        val dataList = mutableListOf(
-            "a",
-            "b",
-            "c",
-            "d",
-            "e",
-            "f"
-        )
+        for (i in 1..25) {
+            dataList.add("$i")
+        }
+
         val clickViewIds = listOf(
             R.id.iv_recycler_string
         )
@@ -122,6 +121,22 @@ class RecyclerViewActivity : AppCompatActivity() {
                 }
 
             }
+        }
+
+
+        val smoothScroller: LinearSmoothScroller = object : LinearSmoothScroller(this) {
+            override fun getVerticalSnapPreference(): Int {
+                return SNAP_TO_START
+            }
+        }
+
+        binding.btnTestScrollPosition.setOnClickListener {
+
+            smoothScroller.targetPosition = 10
+            binding.recyclerViewString.layoutManager?.startSmoothScroll(smoothScroller)
+
+//            binding.recyclerViewString.smoothScrollToPosition(postion)
+
         }
 
     }

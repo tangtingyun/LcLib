@@ -113,4 +113,14 @@ class ExampleUnitTest {
     }
 
 
+    @Test
+    fun testRange() {
+        val position = 2;
+        var map = mutableMapOf(
+            IntRange(1, 3) to 1
+        )
+        println(map.get(IntRange(position, position)))
+    }
+
+
 }

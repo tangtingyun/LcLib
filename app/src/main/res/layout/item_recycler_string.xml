@@ -7,19 +7,20 @@
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/iv_recycler_string"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/dp_100"
         android:src="@drawable/lbxx"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_recycler_string"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_100"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@id/iv_recycler_string"
         app:layout_constraintLeft_toRightOf="@id/iv_recycler_string"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/iv_recycler_string" />
 
 
