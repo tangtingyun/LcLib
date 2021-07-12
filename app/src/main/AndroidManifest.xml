@@ -13,9 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".work.page.IncludeLearnAct"></activity>
+        <activity android:name=".work.bestpractice.threeD.CardFlipActivity"></activity>
+        <activity android:name=".work.page.IncludeLearnAct" />
         <activity android:name=".work.bestpractice.MainActivity" />
-        <activity android:name=".work.bestpractice.IncludeActivity"></activity>
+        <activity android:name=".work.bestpractice.IncludeActivity" />
         <activity android:name=".work.bestpractice.recyclerview.RecyclerViewActivity" />
         <activity android:name=".work.page.MediaActivity" />
         <activity android:name=".work.jetpack.JetpackActivity" />
