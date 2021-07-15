@@ -132,7 +132,7 @@ class RecyclerViewActivity : AppCompatActivity() {
 
         binding.btnTestScrollPosition.setOnClickListener {
 
-            smoothScroller.targetPosition = 10
+            smoothScroller.targetPosition = 18
             binding.recyclerViewString.layoutManager?.startSmoothScroll(smoothScroller)
 
 //            binding.recyclerViewString.smoothScrollToPosition(postion)
