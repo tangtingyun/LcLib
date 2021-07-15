@@ -1,5 +1,6 @@
 package com.step.lclib
 
+import android.view.View
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -122,5 +123,19 @@ class ExampleUnitTest {
         println(map.get(IntRange(position, position)))
     }
 
+    @Test
+    fun testNull() {
+        bindRemainHoursLayout(null)
+    }
+
+    private fun bindRemainHoursLayout(data: LoginDeviceModel?) {
+        if (data?.duration_order != null) {
+            print("ok")
+        } else {
+            print("not ok")
+        }
+    }
 
 }
+
+data class LoginDeviceModel(var duration_order: String? = "")
