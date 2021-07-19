@@ -15,6 +15,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".work.bestpractice.threeD.CardFlipActivity"></activity>
         <activity android:name=".work.page.IncludeLearnAct" />
+        <activity android:name=".work.page.LottieActivity"></activity>
         <activity android:name=".work.bestpractice.MainActivity" />
         <activity android:name=".work.bestpractice.IncludeActivity" />
         <activity android:name=".work.bestpractice.recyclerview.RecyclerViewActivity" />
