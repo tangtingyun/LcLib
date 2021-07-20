@@ -5,7 +5,14 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/color_black</item>
+        <item name="colorControlActivated">#fcaf17</item>
+        <!--        <item name="progressBarStyle">@style/customBarStyle</item>-->
+        <!--        <item name="circularProgressIndicatorStyle">@style/customBarStyle</item>-->
+    </style>
+
+    <style name="customBarStyle" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:indeterminateDrawable">@drawable/bg_gradient_rotate</item>
     </style>
 
 </resources>
