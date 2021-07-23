@@ -7,6 +7,11 @@ import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.step.lclib.R
+import com.step.lclib.work.flow.WanApiService
+import com.step.lclib.work.lclog
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class IncludeLearnAct : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +33,23 @@ class IncludeLearnAct : AppCompatActivity() {
 
         motherBtn.text = "Mother btn"
 
+        motherBtn.setOnClickListener {
+            testHttp()
+        }
 
+    }
+
+    private fun testHttp() {
+        WanApiService.getRandomAndroid().enqueue(object : Callback<String> {
+            override fun onResponse(call: Call<String>, response: Response<String>) {
+                lclog("response")
+
+            }
+
+            override fun onFailure(call: Call<String>, t: Throwable) {
+                lclog("failure")
+            }
+
+        })
     }
 }

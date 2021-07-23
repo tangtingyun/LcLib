@@ -5,7 +5,14 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/color_red</item>
+        <item name="android:progressBarStyle">@style/AppProgressBar</item>
+        <!--        <item name="progressBarStyle">@style/AppProgressBar</item>-->
     </style>
+
+    <style name="AppProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/test_progress</item>
+    </style>
+
 
 </resources>
