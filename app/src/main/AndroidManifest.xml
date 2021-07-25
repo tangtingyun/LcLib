@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".work.page.NineDrawableAct"></activity>
+        <activity android:name=".work.bestpractice.threeD.CardFlipWithCamera"></activity>
+        <activity android:name=".work.page.NineDrawableAct" />
         <activity android:name=".work.bestpractice.threeD.CardFlipActivity" />
         <activity android:name=".work.page.IncludeLearnAct" />
         <activity android:name=".work.page.LottieActivity" />
