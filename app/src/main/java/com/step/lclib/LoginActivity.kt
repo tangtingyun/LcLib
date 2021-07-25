@@ -8,7 +8,7 @@ import android.util.Log
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_login.*
+import com.step.lclib.databinding.ActivityLoginBinding
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.channels.awaitClose
@@ -17,7 +17,7 @@ import kotlinx.coroutines.launch
 
 
 fun EditText.textChanges(): Flow<CharSequence?> {
-    return    callbackFlow {
+    return callbackFlow {
         val listener = object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
             }
@@ -42,11 +42,12 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        val inflate = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(inflate.root)
 
         mainScope.launch {
-            et_user_name.textChanges()
-                .combine(et_pwd.textChanges()) { name, pwd ->
+            inflate.etUserName.textChanges()
+                .combine(inflate.etPwd.textChanges()) { name, pwd ->
                     (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(
                         pwd
                     ))
@@ -59,7 +60,7 @@ class LoginActivity : AppCompatActivity() {
 
 
 
-        btn_login.setOnClickListener {
+        inflate.btnLogin.setOnClickListener {
 //            btn_login.isEnabled = false
             Toast.makeText(this, it.javaClass.simpleName, Toast.LENGTH_SHORT).show()
             testForEach();
