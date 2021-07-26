@@ -1,3 +1,6 @@
 
 // 配置 git tag
 https://www.everythingcli.org/git-like-a-pro-sort-git-tags-by-date/
+
+// git配置多个key
+https://zhuanlan.zhihu.com/p/154604608
