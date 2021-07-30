@@ -25,7 +25,8 @@ class ExoActivity : AppCompatActivity() {
         var simplePlayer = SimpleExoPlayer.Builder(this).build()
         playerView.player = simplePlayer
 
-        val mediaItem = MediaItem.fromUri("file:///android_asset/local_video.mp4")
+//        val mediaItem = MediaItem.fromUri("file:///android_asset/local_video.mp4")
+        val mediaItem = MediaItem.fromUri("http://file-test.chelun.com/g1/us/2021/07/22/4b22f959b78e1957.mp4")
 
         simplePlayer.setMediaItem(mediaItem)
 

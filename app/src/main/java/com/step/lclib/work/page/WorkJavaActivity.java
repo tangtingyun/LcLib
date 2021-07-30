@@ -7,11 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.step.lclib.R;
-import com.step.lclib.work.FlutterAudio;
-import com.step.lclib.work.OnPermissionResult;
-import com.step.lclib.work.PermissionDialog;
-import com.step.lclib.work.StorageCase;
-import com.step.lclib.work.utils.ActivityUtils;
+import com.step.lclib.debug.preference.utils.PrefManager;
 
 
 /**
@@ -37,7 +33,10 @@ public class WorkJavaActivity extends AppCompatActivity {
 
                 System.out.println((bContext instanceof Context));
 
-                System.out.println(ActivityUtils.isActivityDead(context));
+                PrefManager.getInstance(WorkJavaActivity.this)
+                        .showDebugScreen(true);
+
+//                System.out.println(ActivityUtils.isActivityDead(context));
               /*  StorageCase.INSTANCE.testImage(WorkJavaActivity.this);
 
 
