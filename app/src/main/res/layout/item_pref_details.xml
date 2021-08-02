@@ -9,8 +9,9 @@
 
     <TextView
         android:id="@+id/tv_pref_name"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="start"
         android:textAppearance="?attr/textAppearanceListItem"
         app:layout_constrainedWidth="true"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -21,15 +22,16 @@
 
     <TextView
         android:id="@+id/tv_pref_value"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:gravity="end"
         android:textAppearance="?attr/textAppearanceListItem"
         app:layout_constrainedWidth="true"
         app:layout_constraintLeft_toRightOf="@+id/tv_pref_name"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="type" />
+        tools:text="value" />
 
     <TextView
         android:id="@+id/tv_pref_type"
@@ -41,5 +43,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_pref_name"
-        tools:text="value" />
+        tools:text="type" />
 </androidx.constraintlayout.widget.ConstraintLayout>

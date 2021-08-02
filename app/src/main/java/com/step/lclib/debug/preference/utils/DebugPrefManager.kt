@@ -11,38 +11,11 @@ import com.step.lclib.debug.preference.ui.DebugPrefActivity
 import java.io.File
 
 
-class PrefManager private constructor(private val context: Context) {
+class DebugPrefManager private constructor(private val context: Context) {
 
 
-    fun mockSp() {
-        context.getSharedPreferences("ceshi_1", Context.MODE_PRIVATE)
-            .edit().apply {
-                putString("firstName", "ali")
-                putString("lastName", "asadi")
-                putString("email", "ali@asadi.com")
-                putBoolean("aaa", false)
-                putLong("bbb", 1000L)
-                putFloat("ccc", 8888f)
-                putInt("ddd", 878)
-                apply()
-            }
-        context.getSharedPreferences("ceshi_hello_2", Context.MODE_PRIVATE)
-            .edit().apply {
-                putString("env", "beta")
-                putString("host", "google.com")
-                apply()
-            }
-        context.getSharedPreferences("ceshi_mock_3", Context.MODE_PRIVATE)
-            .edit().apply {
-                putBoolean("firstOpen", true)
-                apply()
-            }
-
-    }
-
-    fun showDebugScreen(editable: Boolean) {
-        mockSp()
-        DebugPrefActivity.start(context, editable)
+    fun showDebugScreen() {
+        DebugPrefActivity.start(context)
     }
 
     fun getDataBySpName(prefName: String): PreferenceFile {
@@ -74,7 +47,7 @@ class PrefManager private constructor(private val context: Context) {
         return filesNameList
     }
 
-    fun getSpByName(prefName: String) = context.getSharedPreferences(prefName, Context.MODE_PRIVATE)
+    private fun getSpByName(prefName: String) = context.getSharedPreferences(prefName, Context.MODE_PRIVATE)
 
 
     private fun getValueType(value: Any): PreferenceType = when (value) {
@@ -125,12 +98,12 @@ class PrefManager private constructor(private val context: Context) {
 
         @SuppressLint("StaticFieldLeak")
         @Volatile
-        private var instance: PrefManager? = null
+        private var instance: DebugPrefManager? = null
 
         @JvmStatic
         fun getInstance(context: Context) =
             instance ?: synchronized(this) {
-                instance ?: PrefManager(context.applicationContext).also { instance = it }
+                instance ?: DebugPrefManager(context.applicationContext).also { instance = it }
             }
     }
 }

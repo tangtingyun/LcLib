@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.step.lclib.R;
-import com.step.lclib.debug.preference.utils.PrefManager;
+import com.step.lclib.debug.preference.utils.DebugPrefManager;
 
 
 /**
@@ -33,8 +33,8 @@ public class WorkJavaActivity extends AppCompatActivity {
 
                 System.out.println((bContext instanceof Context));
 
-                PrefManager.getInstance(WorkJavaActivity.this)
-                        .showDebugScreen(true);
+                DebugPrefManager.getInstance(WorkJavaActivity.this)
+                        .showDebugScreen();
 
 //                System.out.println(ActivityUtils.isActivityDead(context));
               /*  StorageCase.INSTANCE.testImage(WorkJavaActivity.this);

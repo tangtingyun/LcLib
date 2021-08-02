@@ -8,18 +8,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
-import com.step.lclib.R
-import com.step.lclib.debug.preference.utils.PrefManager
+import com.step.lclib.debug.preference.utils.DebugPrefManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class PrefListFragment : Fragment() {
 
-    private val mPrefAdapter = PrefListAdapter { view, prefName ->
+    private val mPrefAdapter = PrefListAdapter { _, prefName ->
         if (activity is DebugPrefActivity) {
             (activity as DebugPrefActivity).showDetails(prefName)
         }
@@ -30,28 +28,26 @@ class PrefListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_pref_list, container, false)
-        if (view is RecyclerView) {
-            with(view) {
-                layoutManager = LinearLayoutManager(requireContext())
-                adapter = mPrefAdapter
-                setHasFixedSize(true)
-                addItemDecoration(
-                    DividerItemDecoration(
-                        requireContext(),
-                        DividerItemDecoration.VERTICAL
-                    )
+        val recyclerView = RecyclerView(requireContext())
+        with(recyclerView) {
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = mPrefAdapter
+            setHasFixedSize(true)
+            addItemDecoration(
+                DividerItemDecoration(
+                    requireContext(),
+                    DividerItemDecoration.VERTICAL
                 )
-            }
+            )
         }
-        return view
+        return recyclerView
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewLifecycleOwner.lifecycleScope.launch {
             val filesName = withContext(Dispatchers.IO) {
-                val filesName = PrefManager.getInstance(requireContext()).getFilesName()
+                val filesName = DebugPrefManager.getInstance(requireContext()).getFilesName()
                 filesName
             }
             mPrefAdapter.setNewData(filesName)

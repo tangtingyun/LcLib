@@ -1,7 +1,6 @@
 package com.step.lclib.debug.preference.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +15,7 @@ import com.step.lclib.R
 import com.step.lclib.debug.preference.model.PreferenceItem
 import com.step.lclib.debug.preference.model.PreferenceType
 import com.step.lclib.debug.preference.utils.DialogUtils
-import com.step.lclib.debug.preference.utils.PrefManager
+import com.step.lclib.debug.preference.utils.DebugPrefManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -24,10 +23,9 @@ import kotlinx.coroutines.withContext
 
 class PrefDetailsFragment : Fragment() {
     private var mPrefName: String? = null
-    private var mEditable: Boolean = false
 
-    val mPrefManager: PrefManager by lazy {
-        PrefManager.getInstance(requireContext())
+    private val mDebugPrefManager: DebugPrefManager by lazy {
+        DebugPrefManager.getInstance(requireContext())
     }
 
 
@@ -37,23 +35,23 @@ class PrefDetailsFragment : Fragment() {
                 val preference = item.sp
                 when (item.type) {
                     PreferenceType.Integer -> {
-                        mPrefManager.putInt(preference, item.key, newValue.toInt())
+                        mDebugPrefManager.putInt(preference, item.key, newValue.toInt())
                         item.value = newValue.toInt()
                     }
                     PreferenceType.Float -> {
-                        mPrefManager.putFloat(preference, item.key, newValue.toFloat())
+                        mDebugPrefManager.putFloat(preference, item.key, newValue.toFloat())
                         item.value = newValue.toFloat()
                     }
                     PreferenceType.Long -> {
-                        mPrefManager.putLong(preference, item.key, newValue.toLong())
+                        mDebugPrefManager.putLong(preference, item.key, newValue.toLong())
                         item.value = newValue.toLong()
                     }
                     PreferenceType.Boolean -> {
-                        mPrefManager.putBoolean(preference, item.key, newValue.toBoolean())
+                        mDebugPrefManager.putBoolean(preference, item.key, newValue.toBoolean())
                         item.value = newValue.toBoolean()
                     }
                     PreferenceType.String -> {
-                        mPrefManager.putString(preference, item.key, newValue)
+                        mDebugPrefManager.putString(preference, item.key, newValue)
                         item.value = newValue
                     }
                 }
@@ -70,7 +68,6 @@ class PrefDetailsFragment : Fragment() {
         super.onCreate(savedInstanceState)
         arguments?.let {
             mPrefName = it.getString(ARG_PARAM_PREF_NAME)
-            mEditable = it.getBoolean(ARG_PARAM_PREF_EDIT)
         }
     }
 
@@ -78,22 +75,20 @@ class PrefDetailsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_pref_details, container, false)
+        val recyclerView = RecyclerView(requireContext())
 
-        if (view is RecyclerView) {
-            with(view) {
-                layoutManager = LinearLayoutManager(requireContext())
-                setHasFixedSize(true)
-                addItemDecoration(
-                    DividerItemDecoration(
-                        requireContext(),
-                        DividerItemDecoration.VERTICAL
-                    )
+        with(recyclerView) {
+            layoutManager = LinearLayoutManager(requireContext())
+            setHasFixedSize(true)
+            addItemDecoration(
+                DividerItemDecoration(
+                    requireContext(),
+                    DividerItemDecoration.VERTICAL
                 )
-                adapter = mPrefDetailsAdapter
-            }
+            )
+            adapter = mPrefDetailsAdapter
         }
-        return view
+        return recyclerView
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -105,13 +100,10 @@ class PrefDetailsFragment : Fragment() {
         mPrefName?.let { prefName ->
             viewLifecycleOwner.lifecycleScope.launch {
                 val preferenceFile = withContext(Dispatchers.IO) {
-                    val filesName = PrefManager.getInstance(requireContext()).getDataBySpName(
+                    val filesName = DebugPrefManager.getInstance(requireContext()).getDataBySpName(
                         prefName
                     )
                     filesName
-                }
-                preferenceFile.items.forEach {
-                    Log.e("[preferenceItem]", "${it.key} --- ${it.value} --- ${it.type}")
                 }
                 mPrefDetailsAdapter.setNewData(preferenceFile.items)
             }
@@ -121,14 +113,12 @@ class PrefDetailsFragment : Fragment() {
 
     companion object {
         private const val ARG_PARAM_PREF_NAME = "arg_pref_name"
-        private const val ARG_PARAM_PREF_EDIT = "arg_pref_edit"
 
         @JvmStatic
-        fun newInstance(prefName: String, editable: Boolean) =
+        fun newInstance(prefName: String) =
             PrefDetailsFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM_PREF_NAME, prefName)
-                    putBoolean(ARG_PARAM_PREF_EDIT, editable)
                 }
             }
     }

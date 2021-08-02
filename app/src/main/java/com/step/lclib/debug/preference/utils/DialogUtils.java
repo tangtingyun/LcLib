@@ -14,10 +14,6 @@ import androidx.appcompat.app.AlertDialog;
 import com.step.lclib.R;
 import com.step.lclib.debug.preference.model.PreferenceItem;
 
-
-/**
- * Created by Ali Asadi on 05/12/2018.
- */
 public class DialogUtils {
     public interface OnSaveClicked {
         void onSavePreferenceClicked(PreferenceItem item, String newValue);
@@ -37,7 +33,7 @@ public class DialogUtils {
 
         alert.setView(view);
 
-        alert.setPositiveButton("Save", new DialogInterface.OnClickListener() {
+        alert.setPositiveButton("保存", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 if (onSaveClicked != null) {
@@ -45,7 +41,7 @@ public class DialogUtils {
                 }
             }
         });
-        alert.setNegativeButton("Cancel", null);
+        alert.setNegativeButton("取消", null);
         alert.show();
     }
 }

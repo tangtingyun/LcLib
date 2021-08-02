@@ -2,18 +2,23 @@ package com.step.lclib.debug.preference.ui
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import com.step.lclib.R
 
 class DebugPrefActivity : AppCompatActivity() {
-    private var mEditable: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_debug_pref)
 
-        mEditable = intent.getBooleanExtra(EXTRA_EDITABLE, false)
+        supportActionBar?.apply {
+            setDisplayHomeAsUpEnabled(true);
+            setDisplayShowHomeEnabled(false);
+            title = "PrefViewer";
+        }
+
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
@@ -28,20 +33,35 @@ class DebugPrefActivity : AppCompatActivity() {
             .beginTransaction()
             .replace(
                 R.id.fragment_container_view,
-                PrefDetailsFragment.newInstance(prefName, mEditable)
+                PrefDetailsFragment.newInstance(prefName)
             )
             .addToBackStack(null)
             .commit()
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.getItemId()) {
+            android.R.id.home -> {
+                if (supportFragmentManager.backStackEntryCount > 0) {
+                    supportFragmentManager.popBackStack();
+                } else {
+                    finish()
+                }
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+    }
 
     companion object {
-        private const val EXTRA_EDITABLE = "extra_editable"
 
-        fun start(context: Context, editable: Boolean) {
+        fun start(context: Context) {
             val intent = Intent(context, DebugPrefActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            intent.putExtra(EXTRA_EDITABLE, editable)
             context.startActivity(intent)
         }
     }
