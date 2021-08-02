@@ -18,7 +18,6 @@
         <activity android:name=".work.bestpractice.threeD.CardFlipActivity" />
         <activity android:name=".work.bestpractice.threeD.CardFlipWithCamera"></activity>
         <activity android:name=".work.page.NineDrawableAct" />
-        <activity android:name=".work.bestpractice.threeD.CardFlipActivity" />
         <activity android:name=".work.page.IncludeLearnAct" />
         <activity android:name=".work.page.LottieActivity" />
         <activity android:name=".work.bestpractice.MainActivity" />
