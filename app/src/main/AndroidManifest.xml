@@ -14,9 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".debug.preference.ui.DebugPrefActivity"></activity>
+        <activity android:name=".work.page.SaveBlumActivity"></activity>
+        <activity android:name=".debug.preference.ui.DebugPrefActivity" />
         <activity android:name=".work.bestpractice.threeD.CardFlipActivity" />
-        <activity android:name=".work.bestpractice.threeD.CardFlipWithCamera"></activity>
+        <activity android:name=".work.bestpractice.threeD.CardFlipWithCamera" />
         <activity android:name=".work.page.NineDrawableAct" />
         <activity android:name=".work.page.IncludeLearnAct" />
         <activity android:name=".work.page.LottieActivity" />
