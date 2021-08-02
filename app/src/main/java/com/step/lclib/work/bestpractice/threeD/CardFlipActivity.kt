@@ -25,6 +25,10 @@ class CardFlipActivity : AppCompatActivity() {
         findViewById<View>(R.id.btn_flip_play).setOnClickListener {
             flipCard()
         }
+
+//        val scale = resources.displayMetrics.density
+//        val cameraDist = 8000 * scale
+//        findViewById<View>(R.id.container).cameraDistance = cameraDist
     }
 
     var showingBack = false
@@ -80,7 +84,14 @@ class CardFlipActivity : AppCompatActivity() {
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
-        ): View = inflater.inflate(R.layout.fragment_card_front, container, false)
+        ): View {
+            val inflate = inflater.inflate(R.layout.view_card_front, container, false)
+            val scale = inflate.resources.displayMetrics.density
+            val cameraDist = 8000 * scale
+            inflate.cameraDistance = cameraDist
+            return inflate
+        }
+
     }
 
     /**
@@ -92,11 +103,14 @@ class CardFlipActivity : AppCompatActivity() {
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
-        ): View = inflater.inflate(R.layout.fragment_card_back, container, false)
-
-        override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-            super.onViewCreated(view, savedInstanceState)
+        ): View {
+            val inflate = inflater.inflate(R.layout.view_card_back, container, false)
+            val scale = inflate.resources.displayMetrics.density
+            val cameraDist = 8000 * scale
+            inflate.cameraDistance = cameraDist
+            return inflate
         }
+
     }
 
 }
