@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
@@ -215,9 +216,18 @@ public class ImageUtils {
      */
     public static void notifySystemToScan(final File file) {
         if (file == null || !file.exists()) return;
-        Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
-        intent.setData(Uri.parse("file://" + file.getAbsolutePath()));
-        AppGlobals.getApplication().sendBroadcast(intent);
+//        Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+//        intent.setData(Uri.parse("file://" + file.getAbsolutePath()));
+//        AppGlobals.getApplication().sendBroadcast(intent);
+//
+        MediaScannerConnection.scanFile(AppGlobals.getApplication(),
+                new String[]{file.toString()},
+                null, new MediaScannerConnection.OnScanCompletedListener() {
+                    @Override
+                    public void onScanCompleted(String path, Uri uri) {
+
+                    }
+                });
     }
 
 

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.step.lclib.R
 import com.step.lclib.databinding.ActivitySaveBlumBinding
+import com.step.lclib.work.utils.AssetsUtils
 import com.step.lclib.work.utils.ImageUtils
 
 class SaveBlumActivity : AppCompatActivity() {
@@ -14,8 +15,11 @@ class SaveBlumActivity : AppCompatActivity() {
         setContentView(activitySaveBlumBinding.root)
 
         activitySaveBlumBinding.btnSaveAlbum.setOnClickListener {
-            val bitMap = BitmapFactory.decodeResource(resources, R.drawable.lbxx)
-            ImageUtils.save2Album(this, bitMap)
+//            val bitMap = BitmapFactory.decodeResource(resources, R.drawable.lbxx)
+//            ImageUtils.save2Album(this, bitMap)
+
+
+            AssetsUtils.readStr("xiaoche.txt")
         }
     }
 }
