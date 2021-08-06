@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +16,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".work.page.SaveBlumActivity"></activity>
+        <activity
+            android:name=".work.page.UtilsTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".work.bestpractice.valide.ValidFlowActivity"
+            android:exported="true" />
+        <activity android:name=".work.page.SaveBlumActivity" />
         <activity android:name=".debug.preference.ui.DebugPrefActivity" />
         <activity android:name=".work.bestpractice.threeD.CardFlipActivity" />
         <activity android:name=".work.bestpractice.threeD.CardFlipWithCamera" />

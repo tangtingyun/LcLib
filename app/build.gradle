@@ -68,13 +68,15 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:4.9.1"
 
 
-    def lifecycle_version = "2.3.0"
+    def lifecycle_version = "2.4.0-alpha02"
     def arch_version = "2.1.0"
 
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     // LiveData
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
     // Saved state module for ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
 

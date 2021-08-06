@@ -9,6 +9,14 @@
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/my-github/LcLib/app/src/main/res/layout/activity_utils_test.xml" value="0.36614583333333334" />
+        <entry key="..\:/my-github/LcLib/app/src/main/res/layout/activity_valid_flow.xml" value="0.3614583333333333" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

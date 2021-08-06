@@ -15,11 +15,11 @@ class SaveBlumActivity : AppCompatActivity() {
         setContentView(activitySaveBlumBinding.root)
 
         activitySaveBlumBinding.btnSaveAlbum.setOnClickListener {
-//            val bitMap = BitmapFactory.decodeResource(resources, R.drawable.lbxx)
-//            ImageUtils.save2Album(this, bitMap)
+            val bitMap = BitmapFactory.decodeResource(resources, R.drawable.lbxx)
+            ImageUtils.save2Album(this, bitMap)
 
 
-            AssetsUtils.readStr("xiaoche.txt")
+//            AssetsUtils.readStr("xiaoche.txt")
         }
     }
 }
