@@ -48,35 +48,35 @@ dependencies {
 
 }
 
-def libVersion = "0.0.1-SNAPSHOT"
-project.afterEvaluate {
-    publishing {
-        publications {
-            debug(MavenPublication) {
-                groupId = 'com.fzcx.supercoach.assistant.flutter'
-                artifactId = 'supercoach_debug'
-                version libVersion
-                from components.debug
-            }
-        }
-        publications {
-            release(MavenPublication) {
-                groupId = 'com.fzcx.supercoach.assistant.flutter'
-                artifactId = 'supercoach_release'
-                version libVersion
-                from components.release
-            }
-        }
-
-        repositories {
-            maven {
-                boolean isSnapshot = libVersion.endsWith('-SNAPSHOT')
-                credentials {
-                    username 'deploy_android'
-                    password '1qazxsw2'
-                }
-                url isSnapshot ? 'http://repertory.oa.com:8081/nexus/content/repositories/snapshots-android/' : 'http://repertory.oa.com:8081/nexus/content/repositories/releases-android/'
-            }
-        }
-    }
-}
+//def libVersion = "0.0.1-SNAPSHOT"
+//project.afterEvaluate {
+//    publishing {
+//        publications {
+//            debug(MavenPublication) {
+//                groupId = 'com.fzcx.supercoach.assistant.flutter'
+//                artifactId = 'supercoach_debug'
+//                version libVersion
+//                from components.debug
+//            }
+//        }
+//        publications {
+//            release(MavenPublication) {
+//                groupId = 'com.fzcx.supercoach.assistant.flutter'
+//                artifactId = 'supercoach_release'
+//                version libVersion
+//                from components.release
+//            }
+//        }
+//
+//        repositories {
+//            maven {
+//                boolean isSnapshot = libVersion.endsWith('-SNAPSHOT')
+//                credentials {
+//                    username 'deploy_android'
+//                    password '1qazxsw2'
+//                }
+//                url isSnapshot ? 'http://repertory.oa.com:8081/nexus/content/repositories/snapshots-android/' : 'http://repertory.oa.com:8081/nexus/content/repositories/releases-android/'
+//            }
+//        }
+//    }
+//}

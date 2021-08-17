@@ -136,6 +136,10 @@ dependencies {
     implementation 'com.airbnb.android:lottie:3.7.1'
 
 
+    implementation('com.yanzhenjie:permission:2.0.3') {
+        exclude group: 'androidx.appcompat', module: "appcompat"
+    }
+
 }
 
 

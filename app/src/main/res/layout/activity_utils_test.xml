@@ -14,4 +14,12 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btn_get_abi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABI"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_save_contract" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
