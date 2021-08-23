@@ -17,6 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".work.flow.FlowOpCodeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".work.flow.FlowComposeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_flow_compose"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".work.page.UtilsTestActivity"
             android:exported="true" />
         <activity

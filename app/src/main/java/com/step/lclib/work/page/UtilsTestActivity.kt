@@ -18,8 +18,13 @@ import com.step.lclib.work.utils.SaveUriUtils
 import org.devio.hi.library.util.PermissionConstants
 import java.util.*
 import android.content.ContentProviderOperation
-import java.lang.String
-
+import android.content.Context
+import android.provider.MediaStore
+import android.text.TextUtils
+import androidx.activity.result.ActivityResult
+import androidx.activity.result.ActivityResultCallback
+import androidx.activity.result.contract.ActivityResultContract
+import androidx.activity.result.contract.ActivityResultContracts
 
 class UtilsTestActivity : AppCompatActivity() {
     private lateinit var mBinding: ActivityUtilsTestBinding
@@ -41,7 +46,7 @@ class UtilsTestActivity : AppCompatActivity() {
 //                        } else {
 //                            lclog("已经添加！")
 //                        }
-                        test1()
+                        addContact()
                     }
 
                     override fun rejected() {
@@ -51,43 +56,106 @@ class UtilsTestActivity : AppCompatActivity() {
 
 
         mBinding.btnGetAbi.setOnClickListener {
-            lclog("ABI: ->  ${applicationInfo.nativeLibraryDir}")
+//            abiTest()
+            lclog("asset 0 ->   ${TextUtils.isDigitsOnly("0")}")
+            lclog("asset 1 ->   ${TextUtils.isDigitsOnly("1")}")
+            lclog("asset 2 ->   ${TextUtils.isDigitsOnly("2")}")
+            lclog("asset 2.2 ->   ${TextUtils.isDigitsOnly("2.2")}")
+            lclog("asset 2.8 ->   ${TextUtils.isDigitsOnly("2.8")}")
+            lclog("asset 2.866 ->   ${TextUtils.isDigitsOnly("2.866")}")
+            lclog("asset 0.1 ->   ${TextUtils.isDigitsOnly("0.1")}")
+            lclog("asset null ->   ${TextUtils.isDigitsOnly("")}")
+//            lclog("asset ->   ${TextUtils.isDigitsOnly(null)}")
+            var vipType = ""
+            var vipTypeFix = 0;
+            if (vipType != null) {
+                try {
+                    vipTypeFix = vipType.toInt();
+                } catch (ex: NumberFormatException) {
+                    lclog(ex.toString())
+                }
+            }
 
-            lclog("ABI List: ->  ${Arrays.toString(Build.SUPPORTED_ABIS)}")
-            lclog("ABI 32List: ->  ${Arrays.toString(Build.SUPPORTED_32_BIT_ABIS)}")
-            lclog("ABI 64List: ->  ${Arrays.toString(Build.SUPPORTED_64_BIT_ABIS)}")
+            lclog("fix ->  $vipTypeFix")
+            lclog("fix try ->  ${"".toInt()}")
 
-            lclog("ABI cpu_abi  : ->  ${Build.CPU_ABI}")
-            lclog("ABI cpu_abi2 : ->  ${Build.CPU_ABI2}")
-            lclog("ABI cpu_abi2 : ->  primary:${Build.CPU_ABI}second:${Build.CPU_ABI2}")
+        }
 
 
-            val ops: ArrayList<ContentProviderOperation> = ArrayList()
-            ops.add(
-                ContentProviderOperation.newDelete(ContactsContract.Data.CONTENT_URI)
-                    .withSelection(ContactsContract.Data.RAW_CONTACT_ID + "=?",
-                        arrayOf(String.valueOf(5))
-                    )
-                    .build()
-            )
+        mBinding.btnStartResult.setOnClickListener {
+            registerForActivityResult(object : ActivityResultContract<String, Boolean>() {
+                override fun createIntent(context: Context, input: String?): Intent {
+                    return Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                        .putExtra(MediaStore.EXTRA_OUTPUT, input)
+                }
 
-            contentResolver.applyBatch(ContactsContract.AUTHORITY, ops)
+                override fun parseResult(resultCode: Int, intent: Intent?): Boolean {
+                    return resultCode == RESULT_OK
+                }
 
-            val opsRaw: ArrayList<ContentProviderOperation> = ArrayList()
-            opsRaw.add(
-                ContentProviderOperation.newDelete(ContactsContract.RawContacts.CONTENT_URI)
-                    .withSelection(
-                        ContactsContract.Data._ID + "=?",
-                        arrayOf(String.valueOf(5))
-                    )
-                    .build()
-            )
+            }, object : ActivityResultCallback<Boolean> {
+                override fun onActivityResult(result: Boolean?) {
+                }
 
-            contentResolver.applyBatch(ContactsContract.AUTHORITY, opsRaw)
+            }).launch("")
+
+            registerForActivityResult(
+                ActivityResultContracts.StartActivityForResult(),
+                object : ActivityResultCallback<ActivityResult> {
+                    override fun onActivityResult(result: ActivityResult?) {
+                    }
+
+                }).launch(Intent(this, StorageActivity::class.java))
         }
     }
 
-    private fun test1() {
+    private fun abiTest() {
+        lclog("ABI: ->  ${applicationInfo.nativeLibraryDir}")
+        lclog("ABI List: ->  ${Arrays.toString(Build.SUPPORTED_ABIS)}")
+        lclog("ABI 32List: ->  ${Arrays.toString(Build.SUPPORTED_32_BIT_ABIS)}")
+        lclog("ABI 64List: ->  ${Arrays.toString(Build.SUPPORTED_64_BIT_ABIS)}")
+        lclog("ABI cpu_abi  : ->  ${Build.CPU_ABI}")
+        lclog("ABI cpu_abi2 : ->  ${Build.CPU_ABI2}")
+        lclog("ABI cpu_abi2 : ->  primary:${Build.CPU_ABI}second:${Build.CPU_ABI2}")
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        lclog("onSaveInstanceState")
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        lclog("onRestoreInstanceState")
+    }
+
+    private fun deleteContact() {
+        val ops: ArrayList<ContentProviderOperation> = ArrayList()
+        ops.add(
+            ContentProviderOperation.newDelete(ContactsContract.Data.CONTENT_URI)
+                .withSelection(
+                    ContactsContract.Data.RAW_CONTACT_ID + "=?",
+                    arrayOf("5")
+                )
+                .build()
+        )
+
+        contentResolver.applyBatch(ContactsContract.AUTHORITY, ops)
+
+        val opsRaw: ArrayList<ContentProviderOperation> = ArrayList()
+        opsRaw.add(
+            ContentProviderOperation.newDelete(ContactsContract.RawContacts.CONTENT_URI)
+                .withSelection(
+                    ContactsContract.Data._ID + "=?",
+                    arrayOf("5")
+                )
+                .build()
+        )
+
+        contentResolver.applyBatch(ContactsContract.AUTHORITY, opsRaw)
+    }
+
+    private fun addContact() {
 
         lclog(
             "storage ->  ${

@@ -22,4 +22,21 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_save_contract" />
 
+    <Button
+        android:id="@+id/btn_start_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_get_abi" />
+
+
+    <Button
+        android:id="@+id/btn_time_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Format"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_result" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
