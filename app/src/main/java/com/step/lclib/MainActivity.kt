@@ -211,7 +211,6 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onSaveInstanceState(outState: Bundle) {
-        ViewPager(this)
         super.onSaveInstanceState(outState)
     }
 

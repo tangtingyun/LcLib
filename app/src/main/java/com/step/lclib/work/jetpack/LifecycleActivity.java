@@ -1,4 +1,4 @@
-package com.step.lclib.jetpack;
+package com.step.lclib.work.jetpack;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,8 +23,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.step.lclib.R;
-
-import kotlin.reflect.KVariance;
 
 public class LifecycleActivity extends AppCompatActivity {
 

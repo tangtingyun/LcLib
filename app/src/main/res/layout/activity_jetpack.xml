@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cb="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".work.jetpack.JetpackActivity">
+
+
+    <me.codeboy.android.aligntextview.AlignTextView
+        android:id="@+id/content_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="虚拟商品不支持退换，购买即表示您同意《服务协议》，购买成功后，
+可观看科二考试项目所有视频，每个账号支持3台设备上登录使用，如有疑问联系：021-61278635。"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <com.google.android.material.button.MaterialButton-->
+    <!--        android:id="@+id/mb_work_mgt"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Work Mgt"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <Button
         android:id="@+id/btn_start"
@@ -25,4 +53,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_start" />
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:includeFontPadding="false"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="虚拟商品不支持退换，购买即表示您同意《服务协议》，购买成功后，
+可观看科二考试项目所有视频，每个账号支持3台设备上登录使用，如有疑问联系：021-61278635。"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

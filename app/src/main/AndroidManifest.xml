@@ -15,7 +15,11 @@
         android:networkSecurityConfig="@xml/network_security_config_test"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="false"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".work.md.MaterialActivity"
+            android:exported="true" />
         <activity
             android:name=".work.flow.FlowOpCodeActivity"
             android:exported="true" />
@@ -57,7 +61,7 @@
         <activity android:name=".work.page.WorkActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".ConstrainTestActivity" />
-        <activity android:name=".jetpack.LifecycleActivity" />
+        <activity android:name=".work.jetpack.LifecycleActivity" />
         <activity android:name=".MainActivity" />
 
         <service
