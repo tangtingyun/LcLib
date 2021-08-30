@@ -19,6 +19,7 @@ import org.devio.hi.library.util.PermissionConstants
 import java.util.*
 import android.content.ContentProviderOperation
 import android.content.Context
+import android.content.pm.ActivityInfo
 import android.provider.MediaStore
 import android.text.TextUtils
 import androidx.activity.result.ActivityResult
@@ -29,7 +30,19 @@ import androidx.activity.result.contract.ActivityResultContracts
 class UtilsTestActivity : AppCompatActivity() {
     private lateinit var mBinding: ActivityUtilsTestBinding
     private val NUM = "021-61278635";
+
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        lclog("ClBoostFlutterActivity:  onAttachedToWindow")
+    }
+
+    override fun onContentChanged() {
+        super.onContentChanged()
+        lclog("ClBoostFlutterActivity:  onContentChanged")
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
+        lclog("ClBoostFlutterActivity:  onCreate")
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         super.onCreate(savedInstanceState)
         mBinding = ActivityUtilsTestBinding.inflate(layoutInflater)
         setContentView(mBinding.root)

@@ -18,6 +18,18 @@
         android:testOnly="false"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".work.jetpack.WorkManagerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".work.bestpractice.screen.FullScreenAdoptActivity"
+            android:exported="true" />
+        <activity
+            android:name=".work.bestpractice.MediaListenerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".work.md.TestLayoutActivity"
+            android:exported="true" />
+        <activity
             android:name=".work.md.MaterialActivity"
             android:exported="true" />
         <activity
