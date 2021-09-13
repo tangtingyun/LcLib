@@ -12,6 +12,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/my-github/LcLib/app/src/main/res/drawable/bg_gradient.xml" value="0.38229166666666664" />
+        <entry key="..\:/my-github/LcLib/app/src/main/res/drawable/bg_shape_circle.xml" value="0.38229166666666664" />
         <entry key="..\:/my-github/LcLib/app/src/main/res/layout/activity_flow_op_code.xml" value="0.36614583333333334" />
         <entry key="..\:/my-github/LcLib/app/src/main/res/layout/activity_flow_operator.xml" value="0.36614583333333334" />
         <entry key="..\:/my-github/LcLib/app/src/main/res/layout/activity_full_screen_adopt.xml" value="0.36614583333333334" />

@@ -5,21 +5,82 @@ import android.os.Bundle
 import com.step.lclib.R
 
 import android.annotation.TargetApi
+import android.content.Context
+import android.graphics.Point
 import android.graphics.Rect
 import android.os.Build
+import android.util.DisplayMetrics
 import android.util.Log
 import android.view.*
 
 import android.view.WindowManager
+import com.step.lclib.work.lclog
+import java.lang.Exception
+import java.lang.reflect.Field
 
 
 class FullScreenAdoptActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        extend_w()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_full_screen_adopt)
+        extendContentToStatusBar(window, true)
+
+        val displayMetrics = resources.displayMetrics
+        lclog(" ${displayMetrics.heightPixels} * ${displayMetrics.widthPixels}")
+
+        val dm = DisplayMetrics()
+        windowManager.defaultDisplay.getMetrics(dm)
+        windowManager.defaultDisplay.getRealMetrics(dm)
+        lclog(" 222  ${dm.heightPixels} * ${dm.widthPixels}")
+
+
+
+
+        method1()
+        method2()
+
     }
 
+    private fun method1() {
+        val windowManager = window.windowManager
+        val point = Point()
+        windowManager.defaultDisplay.getRealSize(point)
+        //屏幕实际宽度（像素个数）
+        val width: Int = point.x
+        //屏幕实际高度（像素个数）
+        val height: Int = point.y
+        lclog(" 888999 ${width} * ${height}")
+    }
+
+    private fun method2() {
+        val windowManager = window.windowManager
+        val metrics = DisplayMetrics()
+        windowManager.defaultDisplay.getRealMetrics(metrics)
+        //屏幕实际宽度（像素个数）
+        val width = metrics.widthPixels
+        //屏幕实际高度（像素个数）
+        val height = metrics.heightPixels
+        lclog(" 4455 ${width} * ${height}")
+    }
+
+    fun getStatusBarHeight(context: Context): Int {
+        var c: Class<*>? = null
+        var obj: Any? = null
+        var field: Field? = null
+        var x = 0
+        var statusBarHeight = 0
+        try {
+            c = Class.forName("com.android.internal.R\$dimen")
+            obj = c.newInstance()
+            field = c.getField("status_bar_height")
+            x = field[obj].toString().toInt()
+            statusBarHeight = context.resources.getDimensionPixelSize(x)
+            lclog("the status bar height is : $statusBarHeight")
+        } catch (e1: Exception) {
+            e1.printStackTrace()
+        }
+        return statusBarHeight
+    }
 
     private fun extend_w() {
         // 延伸显示区域到刘海
@@ -49,7 +110,7 @@ class FullScreenAdoptActivity : AppCompatActivity() {
         }
     }
 
-    private fun extendContentToStatusBarV23(window: Window, extend: Boolean) {
+    private fun extendContentToStatusBar(window: Window, extend: Boolean) {
         var visibility = window.decorView.systemUiVisibility
         if (extend) {
             visibility = visibility or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN

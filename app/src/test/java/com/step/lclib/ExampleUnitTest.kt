@@ -1,9 +1,11 @@
 package com.step.lclib
 
+import android.text.TextUtils
 import android.view.View
 import org.junit.Test
 
 import org.junit.Assert.*
+import java.lang.StringBuilder
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -134,6 +136,49 @@ class ExampleUnitTest {
         } else {
             print("not ok")
         }
+    }
+
+
+    @Test
+    fun testCode() {
+        val idsStr = "6";
+        val resultText = idsStr.split(",").map {
+            return@map when (it) {
+                "1" -> "周一";
+                "2" -> "周二";
+                "3" -> "周三";
+                "4" -> "周四";
+                "5" -> "周五";
+                "6" -> "周六";
+                "7" -> "周日";
+                else -> ""
+            }
+        }.joinToString(separator = "")
+
+        val replaceStr = resultText.replace("周", "")
+
+        println("周${replaceStr}")
+
+
+        val replaceStr2 = "周一周三周五周日".replace("周", "")
+
+        println(replaceStr2)
+
+        val mSsWeek = StringBuilder()
+
+        mSsWeek.append("周一")
+        mSsWeek.append("周三")
+        mSsWeek.append("周五")
+        mSsWeek.append("周日")
+
+
+        val replaceStr3 = mSsWeek.replace(Regex("周"), "");
+        println("------$replaceStr3")
+        mSsWeek.delete(0, mSsWeek.length)
+        mSsWeek.append("周")
+        mSsWeek.append(replaceStr3)
+
+        println(mSsWeek)
     }
 
 }
