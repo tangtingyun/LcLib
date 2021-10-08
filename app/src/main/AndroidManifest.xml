@@ -18,6 +18,12 @@
         android:testOnly="false"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".work.bestpractice.page.ViewPager2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".work.bestpractice.page.PageActivity"
+            android:exported="true" />
+        <activity
             android:name=".work.jetpack.WorkManagerActivity"
             android:exported="true" />
         <activity

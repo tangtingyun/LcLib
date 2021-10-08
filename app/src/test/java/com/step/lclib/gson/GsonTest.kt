@@ -43,4 +43,10 @@ class GsonTest {
         println(hashMapOf)
     }
 
+
+    @Test
+    fun reverse(){
+        var hashMapOf = hashMapOf<String, String>()
+    }
+
 }

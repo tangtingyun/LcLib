@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import com.step.lclib.R
 
 class BlankFragment : Fragment() {
@@ -13,6 +14,8 @@ class BlankFragment : Fragment() {
     companion object {
         fun newInstance() = BlankFragment()
     }
+
+    private val viewModelByDeleted: BlankViewModel by activityViewModels()
 
     private lateinit var viewModel: BlankViewModel
 

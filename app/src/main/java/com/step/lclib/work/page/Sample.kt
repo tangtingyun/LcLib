@@ -9,6 +9,11 @@ import androidx.appcompat.widget.AppCompatButton
 import com.step.lclib.R
 import com.step.lclib.work.lclog
 import java.util.*
+import android.os.PowerManager
+
+import android.content.Context
+import android.os.PowerManager.WakeLock
+
 
 class Sample : AppCompatActivity() {
 
@@ -63,9 +68,35 @@ class Sample : AppCompatActivity() {
 
     }
 
+
+    private var powerManager: PowerManager? = null
+    private var wakeLock: WakeLock? = null
+
+    override fun onPostCreate(savedInstanceState: Bundle?) {
+        super.onPostCreate(savedInstanceState)
+        powerManager = getSystemService(Context.POWER_SERVICE) as PowerManager
+        wakeLock = powerManager!!.newWakeLock(10, "com.step.lclib.work.page:wake")
+    }
+
+    /* access modifiers changed from: protected */
     override fun onResume() {
         super.onResume()
+        println("resume")
+        wakeLock!!.acquire()
+    }
 
+    /* access modifiers changed from: protected */
+    override fun onDestroy() {
+        super.onDestroy()
+        println("destroy")
+        wakeLock!!.release()
+    }
+
+    /* access modifiers changed from: protected */
+    override fun onStop() {
+        super.onStop()
+        println("stop")
+        wakeLock!!.acquire()
     }
 
     //获取指定时间的一年中的第几天

@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.util.TypedValue;
 import android.widget.TextView;
 
+import com.google.common.collect.BiMap;
+import com.google.common.collect.HashBiMap;
+
 public class ConstrainTestActivity extends AppCompatActivity {
 
 
@@ -23,5 +26,17 @@ public class ConstrainTestActivity extends AppCompatActivity {
 //        TypedValue.applyDimension(1, 1.0f, Resources.getSystem().getDisplayMetrics());
 //
 //        textView.setTextSize(10);
+
+        HashBiMap<String, String> biMap = HashBiMap.create(4);
+        biMap.put("A", "错误");
+        biMap.put("B", "正确");
+        biMap.put("C", "错误-错误");
+        biMap.put("D", "正确-正确");
+
+        String a = biMap.get("A");
+
+        BiMap<String, String> inverse = biMap.inverse();
+        String error = inverse.get("错误");
+
     }
 }
